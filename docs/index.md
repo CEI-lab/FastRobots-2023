@@ -26,6 +26,7 @@ TAs: [Jonathan Jaramillo, Cameron Urban, Alex Coy, Anya Prabowo, L.M. "Lemon" Na
 
 ## Resources
 
+* [Schedule](./Schedule.md)
 * [Lab schedule](https://calendar.google.com/calendar/u/0?cid=czZjdnNmdTR0cm5vaGJzZ3I5ZGcwN21pOXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
 * [Lecture slides](./lectures/Readme.md)
 * [Student pages](./StudentPages.md)
@@ -38,5 +39,4 @@ TAs: [Jonathan Jaramillo, Cameron Urban, Alex Coy, Anya Prabowo, L.M. "Lemon" Na
 * [Ethical code of conduct](./CoC.md)
 
 Fix:
-[Schedule](./Schedule.md)
 [Lab kit](./BOM.md)
