@@ -10,7 +10,7 @@ ASML is kindly sponsoring a lab kit for each student!
 | Processor         | Artemis Nano w. Bluetooth, charger, microphone, thermal sensor  | [Sparkfun](https://www.sparkfun.com/products/15443)  | 1 | $13.46 |
 | Programming cable |  USB C, 1ft | [Amazon](https://www.amazon.com/SUMPK-Charging-Braided-Compatible-Samsung/dp/B08R68T84N/ref=sr_1_4?keywords=usb+c+to+c&qid=1636380583&qsid=147-6677549-1776715&refinements=p_n_feature_ten_browse-bin%3A23555327011&rnid=23555276011&s=pc&sr=1-4&sres=B08D9SB161%2CB08R68T84N%2CB01CZVEUIE%2CB01FM51812%2CB07VCZV3R4%2CB075V68NVR%2CB075GMKZWW%2CB093BVBRJT%2CB09BBBJ33F%2CB09C2D9Z7T%2CB012V56D2A%2CB092CYFQMP%2CB081L4V3DN%2CB07Y6ZJT1D%2CB07Y2XKPX5%2CB07VPYJV8V%2CB07THJGZ9Z%2CB08W2TP2TT%2CB0744BKDRD%2CB07THFJ1J5&srpt=ELECTRONIC_CABLE) | 1 | $3.33 |
 | Bluetooth         | Bluetooth 4.0 le | [Amazon](https://www.amazon.com/gp/product/B009ZIILLI/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) | 1 | $13.95 |
-| IMU               | 3 axis, 3C | [Mouser]([https://www.digikey.com/en/products/detail/pimoroni-ltd/PIM448/10246391](https://www.mouser.com/ProductDetail/SparkFun/SEN-15335?qs=uwxL4vQweFMcls1MYZT00A%3D%3D)) | 1 | $16.95 |
+| IMU               | 3 axis, 3C | [Mouser]([https://www.digikey.com/en/products/detail/pimoroni-ltd/PIM448/10246391) | 1 | $16.95 |
 | Distance sensor   | Time of flight, <4m | [Pololu](https://www.pololu.com/product/3415) | 2 | $15.59 |
 | Breakout board | 1 to 3 port QWIIC connector | [Sparkfun](https://www.sparkfun.com/products/18012) | 1 | $2.10 | 
 | I2C QWIIC cables | 100mm QWIIC- QWIIC cable | [Sparkfun](https://www.sparkfun.com/products/14427) | 2 | $1.50 |
