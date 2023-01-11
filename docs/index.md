@@ -14,7 +14,8 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 * Instructor: [Assistant Professor Kirstin Petersen](https://cei.ece.cornell.edu/members/kirstin-h-petersen/)
 * Class hours: Tuesday-Thursday 11:25-12.40
 * Location: Bard Hall 140
-* Canvas: Lectures, grades, and Ed discussion will be facilitated through Canvas
+* Canvas: Lecture notes and grades will be facilitated through Canvas
+* EdDiscussion: The online discussion forum can be accessed through Canvas
 * Please [fill out this form](https://forms.gle/ZUquKDo5WgxNhweEA) prior to the first lecture
 
 Fix:
