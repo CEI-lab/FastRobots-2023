@@ -2,8 +2,6 @@
 
 ## Cornell University, Spring 2023
 
-**This site is under construction!**
-
 This course focuses on systems level design and implementation of dynamic autonomous robots. We will design a fast autonomous car and explore dynamic behaviors, acting forces, sensors, and reactive control on an embedded processor, as well as the benefit of partial off-board computation, low latency software, and noise tolerant implementation.
   
   <img src="Figs/Main_page.png" width="500">
@@ -30,6 +28,7 @@ TAs: [Jonathan Jaramillo, Cameron Urban, Alex Coy, Anya Prabowo, L.M. "Lemon" Na
 * [Lab schedule](https://calendar.google.com/calendar/u/0?cid=czZjdnNmdTR0cm5vaGJzZ3I5ZGcwN21pOXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
 * [Lecture slides](./lectures/Readme.md)
 * [Student pages](./StudentPages.md)
+* [Lab kit](./BOM.md)
 * [Making your own Github repository and page](./tutorials/webpage_help.md)
 * [Tutorials and Helpful Resources](./tutorials/Readme.md)
 * [Website for 2022 offering](https://cei-lab.github.io/ECE4960-2022/)
@@ -37,6 +36,3 @@ TAs: [Jonathan Jaramillo, Cameron Urban, Alex Coy, Anya Prabowo, L.M. "Lemon" Na
 * [Grading and extension policies](./Grading.md)
 * [Health considerations](./Health.md)
 * [Ethical code of conduct](./CoC.md)
-
-Fix:
-[Lab kit](./BOM.md)
