@@ -15,9 +15,9 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 * Class hours: Tuesday-Thursday 11:25-12.40
 * Location: Bard Hall 140
 * Canvas: Lectures, grades, and Ed discussion will be facilitated through Canvas
+* Please [fill out this form](https://forms.gle/ZUquKDo5WgxNhweEA) prior to the first lecture
 
 Fix:
-Please fill out this form prior to the first lecture
 TAs: [Jonathan Jaramillo, Cameron Urban, Alex Coy, Anya Prabowo, L.M. "Lemon" Nawrocki, Joey Horwitz, Ryan Chan](./TeachingTeam/readme.md)
 
 ---
