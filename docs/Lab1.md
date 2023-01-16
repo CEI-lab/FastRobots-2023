@@ -26,7 +26,7 @@ Check out the Artemis description, features, and helpful forums here:
 
 ## Instructions
 
-**For all of the following tasks, think about how you will document that your code works. We cannot grade "I did this..". Instead, you can choose to upload photos, screenshots of the serial monitor, screen-recordings, videos of the board, and/or grab the data from the serial monitor and plot them in a graph. As always, feel free to check [last years solutions](https://cei-lab.github.io/ECE4960-2022/StudentPages.html) for examples. 
+*For all of the following tasks, think about how you will document that your code works. We cannot grade "I did this..". Instead, you can choose to upload photos, screenshots of the serial monitor, screen-recordings, videos of the board, and/or grab the data from the serial monitor and plot them in a graph. As always, feel free to check [last years solutions](https://cei-lab.github.io/ECE4960-2022/StudentPages.html) for examples.* 
 
 1. Hook the Artemis board up to your computer, and follow the instructions from bulletpoint 2 above ("Introduction" and "Arduino Installation"). Typical issues encountered include...    
     1. Bad connections, because the USB connector needs to be pressed fully into the Artemis board.
@@ -38,7 +38,7 @@ Check out the Artemis description, features, and helpful forums here:
 
 # Additional tasks for 5000-level students
 
-1. Program the board to turn on the LED when you play a musical "A" note over the speaker, and off otherwise. Use your phone, computer, or similar to generate the sound. If you're having fun you could even combine the microphone and the Serial output to generate an electronic tuner.
+6. Program the board to turn on the LED when you play a musical "A" note over the speaker, and off otherwise. Use your phone, computer, or similar to generate the sound. If you're having fun you could even combine the microphone and the Serial output to generate an electronic tuner.
 
 ## Write-up
 To demonstrate that you've successfully completed the lab, please upload to your site a brief lab report (<600 words), with pseudo-code/code snippets (not included in the word count), photos, graphs, and/or videos documenting all steps work and what you did to make it happen.  
