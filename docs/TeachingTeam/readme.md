@@ -19,20 +19,19 @@ Alex Coy is an ECE graduate student in Prof Molnar's lab with a focus on analog 
 <p align="center"><img src="./CameronUrban.png" width="300"></p>
 TBD
 
-### Anya Prabowo
-<p align="center"><img src="./AnyaPrabowo.png" width="300"></p>
-TBD
+### Anya Prabowo (She/her)
+<p align="center"><img src="./AnyaPrabowo.jpg" width="300"></p>
+Anya Prabowo is an ECE MEng student with an academic interest in computer architecture - and more recently robotics.
 
-### L.M. "Lemon" Nawrocki
-<p align="center"><img src="./LemonNawrocki.png" width="300"></p>
-TBD
+### L.M. "Lemon" Nawrocki (they/them)
+<p align="center"><img src="./LemonNawrocki.jpg" width="300"></p>
+L.M. Nawrocki, also goes by Lemon, and is a senior studying Mechanical Engineering at Cornell. In their spare time they also do research in Prof. Napp's lab. 
 
-### Joseph Horwitz
-<p align="center"><img src="./JosephHorwitz.png" width="300"></p>
-TBD
+### Joseph Horwitz (he/him)
+<p align="center"><img src="./JosephHorwitz.jpg" width="300"></p>
+Joseph Horwitz is a Junior ECE student with a minor in CS. Hometown Washington D.C, he plays ultimate frisbee and ice hockey. He is interested in embedded systems engineering.
 
-### Ryan Chan
-<p align="center"><img src="./RyanChan.png" width="300"></p>
-TBD
-
+### Ryan Chan (he/him)
+<p align="center"><img src="./RyanChan.jpg" width="300"></p>
+Ryan Chan is a senior majoring in ECE and minoring in CS. He leads the electrical team on Cornell EWH and does robotics research in the Organic Robotics (Shepherd) Lab as well as CubeSat research in the Space Systems Design Studio (Peck) Lab at Cornell. He is interested in embedded systems, PCB design, and robots. He also like turtles.
 
