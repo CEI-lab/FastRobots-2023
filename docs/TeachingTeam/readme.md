@@ -17,7 +17,7 @@ Alex Coy is an ECE graduate student in Prof Molnar's lab with a focus on analog 
 
 ### Cameron Urban (he/him)
 <p align="center"><img src="./CameronUrban.png" width="300"></p>
-TBD
+Cameron Urban is an MAE graduate student in Dr. Farrell Helbling's lab. His research is focused on bio-inspired aerial robots. He received a Bachelor of Science in mechanical engineering from Washington University in St. Louis. In the past, he has spent time researching bat flight at Brown University, engineering space systems at MIT Lincoln Laboratory, and working with hardware-focused startups in Shenzhen, China. When not working, Cameron enjoys contributing to open-source software projects, scuba diving, and getting beaten in chess.
 
 ### Anya Prabowo (She/her)
 <p align="center"><img src="./AnyaPrabowo.jpg" width="300"></p>
