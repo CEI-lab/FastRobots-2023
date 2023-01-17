@@ -12,14 +12,12 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 
 ## Info
 * Instructor: [Assistant Professor Kirstin Petersen](https://cei.ece.cornell.edu/members/kirstin-h-petersen/)
+* Teaching Team: [Jonathan Jaramillo, Alex Coy, Cameron Urban, Anya Prabowo, L.M. Nawrocki, Ryan Chan, Joseph Horwitz](./TeachingTeam/readme.md)
 * Class hours: Tuesday-Thursday 11:25-12.40
 * Location: Bard Hall 140
 * Canvas: Lecture notes and grades will be facilitated through Canvas
 * EdDiscussion: The online discussion forum can be accessed through Canvas
 * Please [fill out this form](https://forms.gle/ZUquKDo5WgxNhweEA) prior to the first lecture
-
-Fix:
-TAs: [Jonathan Jaramillo, Cameron Urban, Alex Coy, Anya Prabowo, L.M. "Lemon" Nawrocki, Joey Horwitz, Ryan Chan](./TeachingTeam/readme.md)
 
 ---
 
