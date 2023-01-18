@@ -13,7 +13,7 @@ Jonathan is an ECE graduate student working in the Collective Embodied Intellige
 
 ### Alex Coy (he/him)
 <p align="center"><img src="./AlexCoy.png" width="300"></p>
-Alex Coy is an ECE graduate student in Prof Molnar's lab with a focus on analog and embedded design. Outside of academics, he enjoys cooking, making music, and audiovisual production. Some of his favorite achievements have been being the unofficial "Barbecue Dad" for the Big Red Marching Band and baking Chicago-style deep dish pizzas that disappear within two minutes of being near college students.
+Alex Coy is an ECE graduate student in Prof Molnar's lab with a focus on mmWave radio design. Outside of academics, he enjoys cooking, making music, and audiovisual production. Some of his favorite achievements have been being the unofficial "Barbecue Dad" for the Big Red Marching Band and baking Chicago-style deep dish pizzas that disappear within two minutes of being near college students.
 
 ### Cameron Urban (he/him)
 <p align="center"><img src="./CameronUrban.png" width="300"></p>
