@@ -23,9 +23,9 @@ Cameron Urban is an MAE graduate student in Dr. Farrell Helbling's lab. His rese
 <p align="center"><img src="./AnyaPrabowo.jpg" width="300"></p>
 Anya Prabowo is an ECE MEng student with an academic interest in computer architecture - and more recently robotics.
 
-### L.M. "Lemon" Nawrocki (they/them)
-<p align="center"><img src="./LemonNawrocki.jpg" width="300"></p>
-L.M. Nawrocki, also goes by Lemon, and is a senior studying Mechanical Engineering at Cornell. In their spare time they also do research in Prof. Napp's lab. 
+### L.M. Nawrocki "Lemon" (they/them)
+<p align="center"><img src="./LMNawrocki.jpg" width="300"></p>
+L.M. Nawrocki, who also goes by Lemon, is a senior studying Mechanical Engineering at Cornell and minoring in Robotics. In their spare time they also do research in Prof. Napp's lab. For fun, Lemon enjoys skiing, snowboarding, sewing, and indoor rock climbing.
 
 ### Joseph Horwitz (he/him)
 <p align="center"><img src="./JosephHorwitz.jpg" width="300"></p>
