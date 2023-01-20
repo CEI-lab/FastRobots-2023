@@ -24,7 +24,7 @@ Check out the Artemis description, features, and helpful forums here:
 2. [Setup instructions](https://learn.sparkfun.com/tutorials/artemis-development-with-arduino?_ga=2.30055167.1151850962.1594648676-1889762036.1574524297&_gac=1.19903818.1593457111.Cj0KCQjwoub3BRC6ARIsABGhnyahkG7hU2v-0bSiAeprvZ7c9v0XEKYdVHIIi_-J-m5YLdDBMc2P_goaAtA4EALw_wcB)
 3. [Artemis forums](https://forum.sparkfun.com/viewforum.php?f=167&sid=b66b1e5b6aa9711dc4d064c60e6ad159)
 
-4. Skim the lab instructions in order to be prepared for what to do in your section!
+Finally, please skim the lab instructions in order to be prepared for what to do in your section!
 
 ## Instructions
 
