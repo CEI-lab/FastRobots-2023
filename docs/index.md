@@ -17,7 +17,7 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 * Location: Bard Hall 140
 * Canvas: Lecture notes and grades will be facilitated through Canvas
 * EdDiscussion: The online discussion forum can be accessed through Canvas
-* Please [fill out this form](https://forms.gle/ZUquKDo5WgxNhweEA) prior to the first lecture
+* Please [fill out this form] - NB: we're making updates to this form, and will keep you posted!
 
 ---
 
