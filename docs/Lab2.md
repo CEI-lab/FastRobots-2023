@@ -129,14 +129,15 @@ ble_robot-1.1
 |   ├── BLECStringCharacteristic.h
 |   ├── EString.h
 |   └── RobotCommand.h
-└──  ble_python  
+└── ble_python
     ├── __init__.py
-    ├── bas_ble.py
+    ├── base_ble.py
     ├── ble.py
     ├── cmd_types.py
     ├── connections.yaml
-    ├── demo.ipynb
+    ├── demo.ipynb - main Jupyter notebook
     ├── logs
     |   ├── __init__.py
     └── utils.py
 ```
+In particular, please look at demo.ipynb and get familiar with the different function you can use on the Python side.
