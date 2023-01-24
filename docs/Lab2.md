@@ -119,6 +119,8 @@ For any lab using Python scripts (or Jupyter notebooks), you will first need to 
 ### Lab 2 Codebase
 
 1. Download and unzip the [codebase](https://cornell.box.com/s/aivj9ad3uv74lmpvxz8s64aamgz6azt1) into your project directory.
+2. Copy the ```ble_python``` directory into your project directory.
+3. Please read through the codebase (in particular, the demo.ipynb Jupyter notebook) to understand the different functions that you will be using in this lab.
 
 ```
 ble_robot-1.1
@@ -138,8 +140,6 @@ ble_robot-1.1
     |   ├── __init__.py
     └── utils.py
 ```
-2. Copy the ```ble_python``` directory into your project directory.
-3. Please read through the codebase (in particular, the demo.ipynb Jupyter notebook) to understand the different functions that you will be using in this lab.
 
 <end of pre-lab>
   
