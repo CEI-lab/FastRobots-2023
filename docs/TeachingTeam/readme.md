@@ -1,5 +1,5 @@
 # Fast Robots @Cornell, Spring 2023
-[Return to main page](index.md)
+[Return to main page](../index.md)
 
 ## Teaching Team
 
