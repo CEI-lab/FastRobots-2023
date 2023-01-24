@@ -1,4 +1,4 @@
-# ECE 4960/5960: Fast Robots
+# ECE 4160/5160: Fast Robots
 
 ## Cornell University, Spring 2023
 
