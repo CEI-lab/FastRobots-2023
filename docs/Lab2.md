@@ -120,4 +120,23 @@ For any lab using Python scripts (or Jupyter notebooks), you will first need to 
 
 ### Read Jupyter Notebook
 
-In preparation for the bluetooth lab, please skim through the files [here](https://cornell.box.com/s/aivj9ad3uv74lmpvxz8s64aamgz6azt1)
+In preparation for the bluetooth lab, please skim through the files [here](https://cornell.box.com/s/aivj9ad3uv74lmpvxz8s64aamgz6azt1).
+
+```
+ble_robot-1.1
+├── ble_arduino
+|   ├── ble_arduino.ino
+|   ├── BLECStringCharacteristic.h
+|   ├── EString.h
+|   └── RobotCommand.h
+└──  ble_python  
+    ├── __init__.py
+    ├── bas_ble.py
+    ├── ble.py
+    ├── cmd_types.py
+    ├── connections.yaml
+    ├── demo.ipynb
+    ├── logs
+    |   ├── __init__.py
+    └── utils.py
+```
