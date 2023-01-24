@@ -19,9 +19,9 @@ Alex Coy is an ECE graduate student in Prof Molnar's lab with a focus on mmWave 
 <p align="center"><img src="./CameronUrban.png" width="300"></p>
 Cameron Urban is an MAE graduate student in Dr. Farrell Helbling's lab. His research is focused on bio-inspired aerial robots. He received a Bachelor of Science in mechanical engineering from Washington University in St. Louis. In the past, he has spent time researching bat flight at Brown University, engineering space systems at MIT Lincoln Laboratory, and working with hardware-focused startups in Shenzhen, China. When not working, Cameron enjoys contributing to open-source software projects, scuba diving, and getting beaten in chess.
 
-### Anya Prabowo (She/her)
+### Anya Prabowo (she/her)
 <p align="center"><img src="./AnyaPrabowo.jpg" width="300"></p>
-Anya Prabowo is an ECE MEng student with an academic interest in computer architecture - and more recently robotics.
+Anya Prabowo is an ECE MEng student doing research in Batten's Research Group interested in computer architecture and engineering. In her free time, she enjoys boxing and playing Ultimate Frisbee.
 
 ### L.M. Nawrocki "Lemon" (they/them)
 <p align="center"><img src="./LMNawrocki.jpg" width="300"></p>
