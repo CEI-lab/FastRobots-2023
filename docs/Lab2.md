@@ -161,6 +161,16 @@ If you are new to JupyterLab, please go through the [Introduction to JupyterLab]
 ### Read Through Codebase
 Please read through the codebase (in particular, the ```demo.ipynb``` Jupyter notebook) to understand the different functions that you will be using in this lab.
 
+### Artemis Board Setup
+
+#### Install ArduinoBLE
+Install **ArduinoBLE** from the library manager (Tools -> Manage Libraries...) in the Arduino IDE.
+
+#### Burn Artemis Codebase
+1. Load and burn the sketch **ble_arduino.ino** into the Artemis board from the directory **ble_arduino** in the codebase.
+    > Make sure you change the serial baud rate to 115200 bps.
+2. The Artemis board should now print its MAC address.
+
 ** **End of Prelab** **
 <hr>
   
