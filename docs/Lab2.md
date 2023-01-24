@@ -141,7 +141,8 @@ ble_robot-1.1
     └── utils.py
 ```
 
-<end of pre-lab>
+** End of Prelab **
+<hr>
   
 ## Instructions 
 
