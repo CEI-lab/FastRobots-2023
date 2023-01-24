@@ -117,3 +117,9 @@ For any lab using Python scripts (or Jupyter notebooks), you will first need to 
     pip install numpy pyyaml colorama nest_asyncio bleak jupyterlab
     ```
 **NOTE**: In Windows, you may see an error while installing some of these packages. Follow the download link in the error message to download and install (the unnecessarily huge) C++ build tools.
+
+### Read Jupyter Notebook
+
+In preparation for the bluetooth lab, please skim through the Jupyter notebook that will be provided (embedded below):
+
+<script src="https://gist.github.com/anyafp/ba2e30e060d7ff1b6c2c3657dba16224.js"></script>
