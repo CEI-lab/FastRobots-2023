@@ -33,5 +33,5 @@ Joseph Horwitz is a Junior ECE student with a minor in CS. Hometown Washington D
 
 ### Ryan Chan (he/him)
 <p align="center"><img src="./RyanChan.jpg" width="300"></p>
-Ryan Chan is a senior majoring in ECE and minoring in CS. He leads the electrical team on Cornell EWH and does robotics research in the Organic Robotics (Shepherd) Lab as well as CubeSat research in the Space Systems Design Studio (Peck) Lab at Cornell. He is interested in embedded systems, PCB design, and robots. He also like turtles.
+Ryan Chan is a senior majoring in ECE and minoring in CS. In his spare time he is also in the Cornell Archery Club, on the Cornell EWH project team, and does research in the Organic Robotics (Shepherd) Lab during the school year and Space Systems Design (Peck) Lab during the Summer. He is interested in embedded systems, PCB design, and robots. He also like turtles.
 
