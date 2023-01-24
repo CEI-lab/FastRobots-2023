@@ -120,6 +120,4 @@ For any lab using Python scripts (or Jupyter notebooks), you will first need to 
 
 ### Read Jupyter Notebook
 
-In preparation for the bluetooth lab, please skim through the Jupyter notebook that will be provided (embedded below):
-
-<script src="https://gist.github.com/anyafp/ba2e30e060d7ff1b6c2c3657dba16224.js"></script>
+In preparation for the bluetooth lab, please skim through the files [here](https://cornell.box.com/s/aivj9ad3uv74lmpvxz8s64aamgz6azt1)
