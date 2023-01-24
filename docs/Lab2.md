@@ -120,7 +120,6 @@ For any lab using Python scripts (or Jupyter notebooks), you will first need to 
 
 1. Download and unzip the [codebase](https://cornell.box.com/s/aivj9ad3uv74lmpvxz8s64aamgz6azt1) into your project directory.
 2. Copy the ```ble_python``` directory into your project directory.
-3. Please read through the codebase (in particular, the demo.ipynb Jupyter notebook) to understand the different functions that you will be using in this lab.
 
 ```
 ble_robot-1.1
@@ -141,7 +140,28 @@ ble_robot-1.1
     └── utils.py
 ```
 
-** End of Prelab **
+### Start Jupyter Server
+We will be using Jupyter notebooks to write Python code. Before you can open a Jupyter notebook, you need to start the Jupyter server. **If the Jupyter server is stopped, you will not be able to run/open/modify any Jupyter notebooks.**
+
+1. In a CLI, navigate to your project directory and activate your virtual environment.
+2. Start the Jupyter server
+    > The Jupyter server can only access notebooks from the directory it was started in.
+
+    ```bash
+    jupyter lab
+    ```
+    > macOS users may have to use `Jupyter lab` (capital J).
+3. A browser tab should open up with JupyterLab.
+   > If no window opens up, click on the URL displayed in the CLI.
+
+You will be writing most of your Python code using this browser window on Jupyter notebooks. For students proficient in Python, you may choose to write some of your modules in Python script files and import them into your Jupyter notebook.
+
+If you are new to JupyterLab, please go through the [Introduction to JupyterLab](https://cei-lab.github.io/FastRobots-2023/tutorials/jupyter_notebooks.html) tutorial (available under the [Tutorials](https://cei-lab.github.io/FastRobots-2023/tutorials/) page).
+
+### Read Through Codebase
+Please read through the codebase (in particular, the ```demo.ipynb``` Jupyter notebook) to understand the different functions that you will be using in this lab.
+
+** **End of Prelab** **
 <hr>
   
 ## Instructions 
