@@ -4,10 +4,11 @@
 
 # Lab 2: Bluetooth
 
-Under construction. Only prelab is complete.
+
+<img src="Figs/UnderConstruction.png" width="500">
 
 ## Objective
-The purpose of this lab is to establish communication between your computer and the Artemis board through the bluetooth stack. 
+The purpose of this lab is to establish communication between your computer and the Artemis board through the Bluetooth stack. 
 We will be using Python inside a Jupyter notebook on the computer end and the Arduino programming language on the Artemis side.
 We will also establish a framework for sending data via Bluetooth that will be useful in future labs.
 
