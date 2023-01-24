@@ -4,9 +4,6 @@
 
 # Lab 2: Bluetooth
 
-
-<img src="Figs/UnderConstruction.png" width="500">
-
 ## Objective
 The purpose of this lab is to establish communication between your computer and the Artemis board through the Bluetooth stack. 
 We will be using Python inside a Jupyter notebook on the computer end and the Arduino programming language on the Artemis side.
@@ -122,8 +119,6 @@ For any lab using Python scripts (or Jupyter notebooks), you will first need to 
 ### Lab 2 Codebase
 
 1. Download and unzip the [codebase](https://cornell.box.com/s/aivj9ad3uv74lmpvxz8s64aamgz6azt1) into your project directory.
-2. Copy the ```ble_python``` directory into your project directory.
-3. Please read through the codebase (in particular, the demo.ipynb Jupyter notebook) to understand the different functions that you will be using in this lab.
 
 ```
 ble_robot-1.1
@@ -143,3 +138,33 @@ ble_robot-1.1
     |   ├── __init__.py
     └── utils.py
 ```
+2. Copy the ```ble_python``` directory into your project directory.
+3. Please read through the codebase (in particular, the demo.ipynb Jupyter notebook) to understand the different functions that you will be using in this lab.
+
+<end of pre-lab>
+  
+## Instructions 
+
+<img src="Figs/UnderConstruction.png" width="500">
+
+
+1. Send an *ECHO* command with a string value from the computer to the Artemis board, and receive an augmented string on the computer.
+    > For example, the computer sends the string value "HiHello" to the Artemis board using the ECHO command, and the computer receives the augmented string "Robot says -> HiHello :)" from a read GATT characteristic.
+2. Send three floats to the Artemis board using the *SEND_THREE_FLOATS* command and extract the three float values in the Arduino sketch.
+3. Setup a notification handler in Python to receive the float value (the **BLEFloatCharactersitic** in Arduino) from the Artemis board. In the callback function, store the float value into a (global) variable such that it is updated every time the characteristic value changes. This way we do not have to explicitly use the **receive_float()** function to get the float value.
+4. In your report, briefly explain the difference between the two approaches:
+   1. Receive a float value in Python using **receive_float()** on a characteristic that is defined as **BLEFloatCharactersitic** in the Arduino side
+   2. Receive a float value in Python using **receive_string()** (and subsequently converting it to a float type in Python) on a characteristic that is defined as a **BLECStringCharactersitic** in the Arduino side
+
+## Additional tasks for 5000-level students
+  
+Perform an analysis on the communication performance.
+> TIP: Use the notification handler for this. If you find a better way, include your approach in the write-up.
+
+1. **Effective Data Rate**: Send a message from the computer and receive a reply from the Artemis board. Note the respective times for each event, calculate the data rate and include at least one plot to support your write-up.
+2. **Reliability**: What happens when you send data at a higher rate from the robot to the computer? Does the computer read all the data published (without missing anything) from the Artemis board? Include your answer in the write-up.
+
+## Write-up
+To demonstrate that you've successfully completed the lab, please upload a brief lab report (<600 words), with code snippets (not included in the word count), photos, and/or videos documenting that everything works and what you did to make it happen.
+
+
