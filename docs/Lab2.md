@@ -124,17 +124,17 @@ For any lab using Python scripts (or Jupyter notebooks), you will first need to 
 ```
 ble_robot-1.1
 ├── ble_arduino
-|   ├── ble_arduino.ino
-|   ├── BLECStringCharacteristic.h
-|   ├── EString.h
-|   └── RobotCommand.h
+|   ├── ble_arduino.ino - Arduino code that will be compiled and run on the Artemis board
+|   ├── BLECStringCharacteristic.h - class definition used to send and receive data
+|   ├── EString.h - class definition for Extended String used to easily manipulate character arrays
+|   └── RobotCommand.h - class definition used to extract values of different data types from the robot command string sent to the Artemis board
 └── ble_python
     ├── __init__.py
     ├── base_ble.py
     ├── ble.py
-    ├── cmd_types.py
-    ├── connections.yaml
-    ├── demo.ipynb - main Jupyter notebook
+    ├── cmd_types.py - definition of command type mappings to integers
+    ├── connections.yaml - assigning UUIDs to different data to send/receive
+    ├── demo.ipynb - main Jupyter Notebook to run commands
     ├── logs
     |   ├── __init__.py
     └── utils.py
