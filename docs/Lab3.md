@@ -57,7 +57,6 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 <p align="center"><img src="./Figs/ToF_characterization.png" width="700"></p>
 7. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both works. 
    - Fyi, don't use the Example1_wire code to do this, it works poorly when multiple sensors are attached.  
-
 8. In future labs, it is essential that the code executes quickly, therefore you cannot let your code hang while it waits for the sensor to finish a measurement. Write a piece of code that prints the Artemis clock to the Serial as fast as possible, continuously, and prints new ToF sensor data from both sensors only when avaialble.
    - Fyi, the distanceSensor.checkForDataReady() routine can be called to check when new data is available.
    - How fast does your loop execute, and what is the current limiting factor?
