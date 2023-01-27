@@ -24,6 +24,7 @@ Please read up on the IMU. This year, we're using the [Sparkfun](https://www.spa
 
 <img src="./Figs/ICM-20948_datasheet.png" width="600">
 
+Finally, please skim the lab instructions so you are ready to hit the road when your section starts. This lab is extensive, so be prepared to put in the hours.
 
 ### Instructions
 
