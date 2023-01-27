@@ -33,6 +33,8 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 
 ## Instructions
 
+<img src="Figs/UnderConstruction.png" width="500">
+
 1. Using the Arduino library manager, install the SparkFun VL53L1X 4m laser distance sensor library.
 2. Connect the QWIIC break-out board to the Artemis
 3. Connect the first ToF sensor to the QWIIC breakout board.
@@ -51,16 +53,18 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 
 6. Test your chosen mode 
    - Use the "..\Arduino\libraries\SparkFun_VL53L1X_4m_Laser_Distance_Sensor\examples\Example1_ReadDistance" example
-   - Document your ToF sensor range, accuracy, repeatability, and ranging time
-   
+   - Document your ToF sensor range, accuracy, repeatability, and ranging time   
 <p align="center"><img src="./Figs/ToF_characterization.png" width="700"></p>
-
 7. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both works. 
    - Fyi, don't use the Example1_wire code to do this, it works poorly when multiple sensors are attached.  
 
 8. In future labs, it is essential that the code executes quickly, therefore you cannot let your code hang while it waits for the sensor to finish a measurement. Write a piece of code that prints the Artemis clock to the Serial as fast as possible, continuously, and prints new ToF sensor data from both sensors only when avaialble.
    - Fyi, the distanceSensor.checkForDataReady() routine can be called to check when new data is available.
    - How fast does your loop execute, and what is the current limiting factor?
+
+9. Finally, edit your work from Lab 2, such that you can record time-stamped ToF data for a set period of time, and then send it over Bluetooth to your computer.
+   - It will be helpful in future labs, if you also write a function in Jupyter to plot the data on a graph with time (us or ms for example) on the x-axis and ToF data on the y-axis. 
+
 
 ### Additional tasks for 5000-level students:
 
