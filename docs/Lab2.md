@@ -173,6 +173,75 @@ Install **ArduinoBLE** from the library manager (Tools -> Manage Libraries...) i
 
 ** **End of Prelab** **
 <hr>
+
+## Code Summary 
+
+The Python and Artemis packages provide you with the base code necessary to establish a communication channel between your computer and the Artemis board through BLE. 
+
+### Bluetooth Library Limitations
+
+Though a characteristic value can be up to 512 bytes long (according to the Bluetooth Core Specification), the ArduinoBLE library limits the maximum size to 255 bytes. We are using a more conservative size limitation of 150 bytes. The provided Python codebase throws an error if you attempt to send data that is larger than the member variable ArtemisBLEController.max_write_length (150 bytes). On the Arduino side, the macro MAX_MSG_SIZE (defined in EString.h) is used to set the character array sizes used in various classes.
+
+### ```ble_arduino``` – Processing Commands on the Artemis Board
+
+1. **BLE UUIDS**
+* These are the Universally Unique Identifiers. This helps differentiate the different kinds of data that you’d want to send between the Artemis and your computer. 
+* In order to generate new UUIDs to use, run these lines in your Jupyter Notebook and copy them to the appropriate places.
+
+```
+   from uuid import uuid4
+   uuid4()
+```
+
+2. **BLEService**
+* Used to set advertised local name and service, add BLE characteristics, and add BLE service
+* See setup in ```ble_arduino.ino``` to see how to use BLEService for our purposes, or [this page](https://docs.arduino.cc/retired/archived-libraries/CurieBLE#bleservice-class) for more examples
+* If you add more UUIDs/characters (different kinds of data to transmit/receive), don’t forget to add the characteristic to the BLEService
+
+3. **BLExCharacteristic**
+
+* These are constructors for handling different types of data provided by ArduinoBLE. Please read [this page] (https://docs.arduino.cc/retired/archived-libraries/CurieBLE#blecharacteristic-class) for more details on types, syntax, parameters and examples.
+* These three types are what we recommend, and should be sufficient for this class (but feel free to use other types if you feel the need):
+  * BLEFloatCharacteristic
+  * BLEIntCharacteristic
+  * BLECStringChracteristic – this is not provided by ArduinoBLE but defined in BLECStringCharacteristic.h
+* For receiving data on the Artemis, only use BLECStringCharacteristic as it defines a writable string GATT characteristic for communicating robot commands
+* Relevant functions:
+  * Constructor – parameters for constructors of relevant characteristics are found at the top of ```ble_arduino.ino```,  or [here](https://docs.arduino.cc/retired/archived-libraries/CurieBLE#bleservice-class) for all the characteristics
+  * For transmitting characteristics:
+    * ```writeValue( value );``` – value to transmit to your computer; ensure that the data type matches the characteristic type you use
+  * For receiving characteristics:
+    * ```written();``` – returns 1 if value has been written to this UUID by another BLE device
+    * ```value();``` and ```valueWritten();``` – returns a uint8 array containing the BLE characteristic value, and the length of the uint8 array; used in ```set_cmd_string()``` function in RobotCommand.h
+
+4. **RobotCommand**
+* This is a class defined in RobotCommand.h
+* RobotCommand is used when handling a robot command that the Artemis receives, of the string format “<cmd_type>:<value1>|<value2|<value3>|...”
+  * <cmd_type> is an integer
+  * <value> can be a float (or double), integer, or string literal
+* Used in the function handle_command() in ```ble_arduino.ino```.
+* Relevant functions:
+  * Constructor – instantiates object; takes a string (character array) to specify the delimiters used to tokenize the robot command string e.g. ```RobotCommand robot_cmd(":|");``` where “:|” is the delimiter
+  * ```set_cmd_string( value, valueWritten );``` – set the command string from the characteristic value received for the RobotCommand object instantiated
+  * ```get_command_type( cmd_type );``` – returns 1 if successful; sets ```cmd_type``` as the integer value sent by the other device
+  * ```get_next_value( val );``` – returns 1 if successful; extracts the next value from the command string and assigns it to ```val```; ensure that the type of val is what is expected (by ensuring you handle ```cmd_type``` properly in case statements in ```handle_command()```)
+
+5. **EString (Enhanced String)**
+* Used to easily manipulate character arrays, defined in EString.h
+* The header provides getter and setter functions to convert between a character array and an EString object
+* We recommend using this when transmitting strings from the Artemis to your computer
+* See case PING in ```handle_command()``` in ```ble_arduino.ino``` for an example on how to use EString
+* Relevant functions:
+  * ```clear();``` – empties the contents of the character array
+  * ```append();``` – append a float, double, int, character array, or string literal to the EString
+  * ```c_str();``` – returns the character array
+
+6. **enum CommandTypes**
+* This enumerates the variables in CommandTypes e.g. “PING” has the value 0, “SEND_TWO_INTS” has the value 1
+* This is used in the case statements in ```handle_command()```
+
+7. **handle_commmand()**
+* This is the function that handles commands received by your computer by using a switch statement to determine what action to take depending on the command received ([what is a switch statement?](https://www.geeksforgeeks.org/switch-statement-cc/))
   
 ## Instructions 
 
