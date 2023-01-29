@@ -272,6 +272,8 @@ to
 ```python
 if True:
 ```
+3. The UUIDs used in the Arduino sketch should match those used by Python in the configuration file (**connection.yaml**).
+4. The command types defined in *enum CommandTypes* in the Arduino sketch should match those defined in cmd_types.py.
 
 ## Instructions 
 
