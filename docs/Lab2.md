@@ -171,9 +171,6 @@ Install **ArduinoBLE** from the library manager (Tools -> Manage Libraries...) i
     > Make sure you change the serial baud rate to 115200 bps.
 2. The Artemis board should now print its MAC address.
 
-** **End of Prelab** **
-<hr>
-
 ## Code Summary 
 
 The Python and Artemis packages provide you with the base code necessary to establish a communication channel between your computer and the Artemis board through BLE. 
@@ -242,50 +239,48 @@ This is a summary of the code running on your Artemis, found in the ```ble_ardui
 
 7. **handle_commmand()**
 * This is the function that handles commands received by your computer by using a switch statement to determine what action to take depending on the command received ([what is a switch statement?](https://www.geeksforgeeks.org/switch-statement-cc/))
-  
+
+** **End of Prelab** **
+<hr>
+
 ## Instructions 
 
-<img src="Figs/UnderConstruction.png" width="500">
+In order to test your robot's sensors more effectively, it is critical to have a working wireless debugging system. The following tasks will ensure that you can receive timestamped messages from the Artemis board.
 
-In order to test your robot's sensors more effectively, it is
-critical to have a working wireless debugging system. The
-following tasks will ensure that you can receive timestamped
-messages from the Artemis board.
+1. Change BLEService UUID
 
-1. Send an *ECHO* command with a string value from the computer to the Artemis board, and receive an augmented string on the computer.
+Without changing this, you might connect to your classmates' Artemis boards instead of your own.
+* Generate a new UUID
+ ```
+   from uuid import uuid4
+   uuid4()
+ ```
+* In ble_arduino.ino: replace the BLEService UUID with this generated UUID on this line:
+``` #define BLE_UUID_TEST_SERVICE "9A48ECBA-2E92-082F-C079-9E75AAE428B1" ```
+* In connections.yml: replace ble_service with this generated UUID on this line:
+``` ble_service: '9a48ecba-2e92-082f-c079-9e75aae428b1' ```
+
+2. Send an *ECHO* command with a string value from the computer to the Artemis board, and receive an augmented string on the computer.
     > For example, the computer sends the string value "HiHello" to the Artemis board using the ECHO command, and the computer receives the augmented string "Robot says -> HiHello :)" from a read GATT characteristic.
-2. Add a command GET_TIME_MILLIS which makes the robot reply
-write a string such as "T:123456" to the string characteristic.
-3. Setup a notification handler in Python to receive the string value (the **BLEStringCharactersitic** in Arduino) from the Artemis board. In the callback function, extract the
-time from the string.
-4. Add a command GET_TEMP_5s which sends an array
-of five timestamped internal die temperature readings using
-a string array, taken once per second for five seconds.
-For example, you could send temperatures in
-pairs as "T:06050|C:28.545|T:07082|C:28.537" (and so on until)
-five timestamped temeratures are sent. Remember the
-characteristic size limit! Add processing code to your
-Python notification handler.
-5. Add a command GET_TEMP_5s_RAPID which sends an array of
-five seconds worth of rapidly sampled temperature data.
-You should try to send at least fifty temperature points.
-Remember the characteristic size limit, and add processing
-code to your Python notification handler.
-6. Working with strings introduces significant latency, so
-real-time communication is not practical. Your robot needs
-to handle all real-time processing on-board, and communicate
-results in chunks (hopefully while safely stopped).
-The Artemis board has 384 kB of RAM. Approximately how much
-data can you store to send without running out of memory?
-Discuss the limitations in the form of "5 seconds of 16-bit
-values taken at 150 Hz."
 
+3. Add a command GET_TIME_MILLIS which makes the robot reply write a string such as "T:123456" to the string characteristic.
+
+4. Setup a notification handler in Python to receive the string value (the **BLEStringCharactersitic** in Arduino) from the Artemis board. In the callback function, extract the time from the string.
+
+5. Add a command GET_TEMP_5s which sends an array of five timestamped internal die temperature readings using a string array, taken once per second for five seconds. For example, you could send temperatures in pairs as "T:06050|C:28.545|T:07082|C:28.537" (and so on until) five timestamped temeratures are sent. Remember the characteristic size limit! Add processing code to your Python notification handler.
+
+6. Add a command GET_TEMP_5s_RAPID which sends an array of five seconds worth of rapidly sampled temperature data. You should try to send at least fifty temperature points. Remember the characteristic size limit, and add processing code to your Python notification handler.
+
+7. Working with strings introduces significant latency, so real-time communication is not practical. Your robot needs to handle all real-time processing on-board, and communicate results in chunks (hopefully while safely stopped). The Artemis board has 384 kB of RAM. Approximately how much
+data can you store to send without running out of memory? Discuss the limitations in the form of "5 seconds of 16-bit values taken at 150 Hz."
+
+
+<!--
 7. Optional: You can try sending plain byte arrays over a
 suitably-typed Bluetooth characteristic. You could also
 explore sending character arrays that represent bytes, such
 as base64-encoded bytes.
 
-<!--
 6. In your report, briefly explain the difference between the two approaches:
    1. Receive a float value in Python using **receive_float()** on a characteristic that is defined as **BLEFloatCharactersitic** in the Arduino side
    2. Receive a float value in Python using **receive_string()** (and subsequently converting it to a float type in Python) on a characteristic that is defined as a **BLECStringCharactersitic** in the Arduino side
@@ -305,6 +300,8 @@ Please include at least one plot to support your write-up.
 2. **Reliability**: What happens when you send data at a higher rate from the robot to the computer? Does the computer read all the data published (without missing anything) from the Artemis board? Include your answer in the write-up.
 
 ## Write-up
+
+Word Limit: < 600 words
 
 We understand that some of the sections in your webpage will overlap with the instructions in the lab handout. That is okay as long as there is no blatant copying and pasting. Paraphrase instructions in a way that shows you understand and have executed them.
 
