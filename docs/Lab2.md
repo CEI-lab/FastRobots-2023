@@ -258,7 +258,7 @@ Without changing this, you might connect to your classmates' Artemis boards inst
    uuid4()
  ```
 * In ble_arduino.ino: replace the BLEService UUID with this generated UUID on this line:
-``` c
+``` arduino
 #define BLE_UUID_TEST_SERVICE "9A48ECBA-2E92-082F-C079-9E75AAE428B1" 
 ```
 * In connections.yml: replace ble_service with this generated UUID on this line:
