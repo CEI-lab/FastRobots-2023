@@ -323,7 +323,7 @@ This is not a strict requirement, but may be helpful in understanding what shoul
 * Setup: Briefly describe the steps taken to set up your computer for Lab 2, showing any results (i.e. MAC address printing)
 * Codebase: Add a brief explanation of your understanding of the codebase and how Bluetooth works between your computer and the Artemis
 
-2. Lab Tasks
+2. Lab Tasks: Include a brief explanation on what you did and the results for each of these sections
 * Send Echo Command
 * Get Time Command
 * Notification Handler
@@ -334,7 +334,7 @@ This is not a strict requirement, but may be helpful in understanding what shoul
 
 Please also include code __snippets__ (consider using [GitHub Gists](https://gist.github.com)) in appropriate sections if you included any written code. **Do not copy and paste all your code.** Include only relevant functions used for each task.
 
-Include screenshots of relevant results (i.e. messages received in Jupyter Notebook, serial terminal print of messages received by Artemis)
+Include screenshots of relevant results (i.e. messages received in Jupyter Notebook, serial terminal print of messages received by Artemis).
 
 
 
