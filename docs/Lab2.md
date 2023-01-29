@@ -181,7 +181,7 @@ Though a characteristic value can be up to 512 bytes long (according to the Blue
 
 ### ble_arduino – Processing Commands on the Artemis Board
 
-This is a summary of the code running on your Artemis, found in the ```ble_arduino.ino`` file.
+This is a summary of the code running on your Artemis, found in the ```ble_arduino.ino``` file.
 
 1. **BLE UUIDS**
 * These are the Universally Unique Identifiers. This helps differentiate the different kinds of data that you’d want to send between the Artemis and your computer. 
