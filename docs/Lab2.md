@@ -303,6 +303,29 @@ Please include at least one plot to support your write-up.
 2. **Reliability**: What happens when you send data at a higher rate from the robot to the computer? Does the computer read all the data published (without missing anything) from the Artemis board? Include your answer in the write-up.
 
 ## Write-up
-To demonstrate that you've successfully completed the lab, please upload a brief lab report (<600 words), with code snippets (not included in the word count), photos, and/or videos documenting that everything works and what you did to make it happen.
+
+We understand that some of the sections in your webpage will overlap with the instructions in the lab handout. That is okay as long as there is no blatant copying and pasting. Paraphrase instructions in a way that shows you understand and have executed them.
+
+### Webpage sections
+
+This is not a strict requirement, but may be helpful in understanding what should be included in your webpage. It also helps with the flow of your report to show your understanding to the lab graders.
+
+1. Prelab
+* Setup: Briefly describe the steps taken to set up your computer for Lab 2, showing any results (i.e. MAC address printing)
+* Codebase: Add a brief explanation of your understanding of the codebase and how Bluetooth works between your computer and the Artemis
+
+2. Lab Tasks
+* Send Echo Command
+* Get Time Command
+* Notification Handler
+* Get Temperature Command
+* Limitations 
+* (5160) Effective Data Rate and Overhead
+* (5160) Reliability
+
+Please also include code __snippets__ (consider using [GitHub Gists](https://gist.github.com)) in appropriate sections if you included any written code. **Do not copy and paste all your code.** Include only relevant functions used for each task.
+
+Include screenshots of relevant results (i.e. messages received in Jupyter Notebook, serial terminal print of messages received by Artemis)
+
 
 
