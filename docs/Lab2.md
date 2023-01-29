@@ -187,11 +187,10 @@ Though a characteristic value can be up to 512 bytes long (according to the Blue
 1. **BLE UUIDS**
 * These are the Universally Unique Identifiers. This helps differentiate the different kinds of data that you’d want to send between the Artemis and your computer. 
 * In order to generate new UUIDs to use, run these lines in your Jupyter Notebook and copy them to the appropriate places.
-
-```
+ ```
    from uuid import uuid4
    uuid4()
-```
+ ```
 
 2. **BLEService**
 * Used to set advertised local name and service, add BLE characteristics, and add BLE service
