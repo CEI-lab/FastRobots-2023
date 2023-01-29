@@ -277,6 +277,9 @@ if True:
 
 ## Instructions 
 
+* Before carrying out the instructions, ensure that you open the **demo.ipynb** notebook in the directory **ble_python** in JupyterLab. Follow and test the instructions in the notebook to test and use BLE.
+> Run through all the cells before you begin to work on the lab tasks.
+
 In order to test your robot's sensors more effectively, it is critical to have a working wireless debugging system. The following tasks will ensure that you can receive timestamped messages from the Artemis board.
 
 1. Send an *ECHO* command with a string value from the computer to the Artemis board, and receive an augmented string on the computer.
@@ -333,6 +336,7 @@ This is not a strict requirement, but may be helpful in understanding what shoul
 * Codebase: Add a brief explanation of your understanding of the codebase and how Bluetooth works between your computer and the Artemis
 
 2. Lab Tasks: Include a brief explanation on what you did and the results for each of these sections
+* demo.ipynb: Show that you were able to run all the cells before carrying out the lab tasks
 * Send Echo Command
 * Get Time Command
 * Notification Handler
