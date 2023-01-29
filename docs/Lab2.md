@@ -260,7 +260,7 @@ artemis_address: 'C0:C2:8A:89:98:08'
 ``` arduino
 #define BLE_UUID_TEST_SERVICE "9A48ECBA-2E92-082F-C079-9E75AAE428B1" 
 ```
-* In connections.yml: replace ble_service with this generated UUID on this line:
+* In connections.yaml: replace ble_service with this generated UUID on this line:
 ``` python
 ble_service: '9a48ecba-2e92-082f-c079-9e75aae428b1' 
 ```
