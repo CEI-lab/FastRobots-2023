@@ -216,7 +216,7 @@ Though a characteristic value can be up to 512 bytes long (according to the Blue
 
 4. **RobotCommand**
 * This is a class defined in RobotCommand.h
-* RobotCommand is used when handling a robot command that the Artemis receives, of the string format “\<cmd_type\>:\<value1\>|\<value2\>|\<value3\>|...”
+* RobotCommand is used when handling a robot command that the Artemis receives, of the string format “\<cmd_type\>:\<value1\>\|\<value2\>\|\<value3\>\|...”
   * \<cmd_type\> is an integer
   * \<value\> can be a float (or double), integer, or string literal
 * Used in the function handle_command() in ```ble_arduino.ino```.
