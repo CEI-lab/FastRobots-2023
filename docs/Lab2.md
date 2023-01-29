@@ -250,8 +250,7 @@ This is a summary of the code running on your Artemis, found in the ```ble_ardui
 ```python
 artemis_address: 'C0:C2:8A:89:98:08'
 ```
-2. Change BLEService UUID
-Without changing this, you might connect to your classmates' Artemis boards instead of your own.
+2. Change BLEService UUID: Without changing this, you might connect to your classmates' Artemis boards instead of your own.
 * Generate a new UUID
  ```
    from uuid import uuid4
@@ -264,6 +263,14 @@ Without changing this, you might connect to your classmates' Artemis boards inst
 * In connections.yml: replace ble_service with this generated UUID on this line:
 ``` python
 ble_service: '9a48ecba-2e92-082f-c079-9e75aae428b1' 
+```
+* (Extra step for Windows/Linux) In base_ble.py: change line 53 from
+```python
+if IS_ATLEAST_MAC_OS_12:
+```
+to
+```python
+if True:
 ```
 
 ## Instructions 
