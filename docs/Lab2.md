@@ -199,7 +199,6 @@ Though a characteristic value can be up to 512 bytes long (according to the Blue
 * If you add more UUIDs/characters (different kinds of data to transmit/receive), don’t forget to add the characteristic to the BLEService
 
 3. **BLExCharacteristic**
-
 * These are constructors for handling different types of data provided by ArduinoBLE. Please read [this page](https://docs.arduino.cc/retired/archived-libraries/CurieBLE#blecharacteristic-class) for more details on types, syntax, parameters and examples.
 * These three types are what we recommend, and should be sufficient for this class (but feel free to use other types if you feel the need):
   * BLEFloatCharacteristic
