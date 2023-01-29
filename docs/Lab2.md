@@ -186,7 +186,7 @@ This is a summary of the code running on your Artemis, found in the ```ble_ardui
 1. **BLE UUIDS**
 * These are the Universally Unique Identifiers. This helps differentiate the different kinds of data that you’d want to send between the Artemis and your computer. 
 * In order to generate new UUIDs to use, run these lines in your Jupyter Notebook and copy them to the appropriate places.
- ```
+ ```python
    from uuid import uuid4
    uuid4()
  ```
@@ -243,12 +243,14 @@ This is a summary of the code running on your Artemis, found in the ```ble_ardui
 ** **End of Prelab** **
 <hr>
 
-## Instructions 
+## Configurations
 
-In order to test your robot's sensors more effectively, it is critical to have a working wireless debugging system. The following tasks will ensure that you can receive timestamped messages from the Artemis board.
-
-1. Change BLEService UUID
-
+1. Update your Artemis MAC Address
+* In connections.yaml: replace the artemis_address value with the MAC address printed by your Artemis in the prelab on this line:
+```python
+artemis_address: 'C0:C2:8A:89:98:08'
+```
+2. Change BLEService UUID
 Without changing this, you might connect to your classmates' Artemis boards instead of your own.
 * Generate a new UUID
  ```
@@ -256,22 +258,30 @@ Without changing this, you might connect to your classmates' Artemis boards inst
    uuid4()
  ```
 * In ble_arduino.ino: replace the BLEService UUID with this generated UUID on this line:
-``` #define BLE_UUID_TEST_SERVICE "9A48ECBA-2E92-082F-C079-9E75AAE428B1" ```
+``` c
+#define BLE_UUID_TEST_SERVICE "9A48ECBA-2E92-082F-C079-9E75AAE428B1" 
+```
 * In connections.yml: replace ble_service with this generated UUID on this line:
-``` ble_service: '9a48ecba-2e92-082f-c079-9e75aae428b1' ```
+``` python
+ble_service: '9a48ecba-2e92-082f-c079-9e75aae428b1' 
+```
 
-2. Send an *ECHO* command with a string value from the computer to the Artemis board, and receive an augmented string on the computer.
+## Instructions 
+
+In order to test your robot's sensors more effectively, it is critical to have a working wireless debugging system. The following tasks will ensure that you can receive timestamped messages from the Artemis board.
+
+1. Send an *ECHO* command with a string value from the computer to the Artemis board, and receive an augmented string on the computer.
     > For example, the computer sends the string value "HiHello" to the Artemis board using the ECHO command, and the computer receives the augmented string "Robot says -> HiHello :)" from a read GATT characteristic.
 
-3. Add a command GET_TIME_MILLIS which makes the robot reply write a string such as "T:123456" to the string characteristic.
+2. Add a command GET_TIME_MILLIS which makes the robot reply write a string such as "T:123456" to the string characteristic.
 
-4. Setup a notification handler in Python to receive the string value (the **BLEStringCharactersitic** in Arduino) from the Artemis board. In the callback function, extract the time from the string.
+3. Setup a notification handler in Python to receive the string value (the **BLEStringCharactersitic** in Arduino) from the Artemis board. In the callback function, extract the time from the string.
 
-5. Add a command GET_TEMP_5s which sends an array of five timestamped internal die temperature readings using a string array, taken once per second for five seconds. For example, you could send temperatures in pairs as "T:06050|C:28.545|T:07082|C:28.537" (and so on until) five timestamped temeratures are sent. Remember the characteristic size limit! Add processing code to your Python notification handler.
+4. Add a command GET_TEMP_5s which sends an array of five timestamped internal die temperature readings using a string array, taken once per second for five seconds. For example, you could send temperatures in pairs as "T:06050\|C:28.545\|T:07082\|C:28.537" (and so on until) five timestamped temeratures are sent. Remember the characteristic size limit! Add processing code to your Python notification handler.
 
-6. Add a command GET_TEMP_5s_RAPID which sends an array of five seconds worth of rapidly sampled temperature data. You should try to send at least fifty temperature points. Remember the characteristic size limit, and add processing code to your Python notification handler.
+5. Add a command GET_TEMP_5s_RAPID which sends an array of five seconds worth of rapidly sampled temperature data. You should try to send at least fifty temperature points. Remember the characteristic size limit, and add processing code to your Python notification handler.
 
-7. Working with strings introduces significant latency, so real-time communication is not practical. Your robot needs to handle all real-time processing on-board, and communicate results in chunks (hopefully while safely stopped). The Artemis board has 384 kB of RAM. Approximately how much
+6. Working with strings introduces significant latency, so real-time communication is not practical. Your robot needs to handle all real-time processing on-board, and communicate results in chunks (hopefully while safely stopped). The Artemis board has 384 kB of RAM. Approximately how much
 data can you store to send without running out of memory? Discuss the limitations in the form of "5 seconds of 16-bit values taken at 150 Hz."
 
 
