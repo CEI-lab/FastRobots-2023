@@ -243,7 +243,9 @@ This is a summary of the code running on your Artemis, found in the ```ble_ardui
 ** **End of Prelab** **
 <hr>
 
-## Configurations
+## Instructions 
+
+### Configurations
 
 1. Update your Artemis MAC Address
 * In connections.yaml: replace the artemis_address value with the MAC address printed by your Artemis in the prelab on this line:
@@ -275,10 +277,10 @@ if True:
 3. The UUIDs used in the Arduino sketch should match those used by Python in the configuration file (**connection.yaml**).
 4. The command types defined in *enum CommandTypes* in the Arduino sketch should match those defined in cmd_types.py.
 
-## Instructions 
-
-* Before carrying out the instructions, ensure that you open the **demo.ipynb** notebook in the directory **ble_python** in JupyterLab. Follow and test the instructions in the notebook to test and use BLE.
+* Before carrying out the tasks, ensure that you open the **demo.ipynb** notebook in the directory **ble_python** in JupyterLab. Follow and test the instructions in the notebook to test and use BLE.
 > Run through all the cells before you begin to work on the lab tasks.
+
+### Tasks
 
 In order to test your robot's sensors more effectively, it is critical to have a working wireless debugging system. The following tasks will ensure that you can receive timestamped messages from the Artemis board.
 
@@ -336,7 +338,8 @@ This is not a strict requirement, but may be helpful in understanding what shoul
 * Codebase: Add a brief explanation of your understanding of the codebase and how Bluetooth works between your computer and the Artemis
 
 2. Lab Tasks: Include a brief explanation on what you did and the results for each of these sections
-* demo.ipynb: Show that you were able to run all the cells before carrying out the lab tasks
+* Configurations: Show that you have made the necessary configurations
+* **demo.ipynb**: Show that you were able to run all the cells before carrying out the lab tasks
 * Send Echo Command
 * Get Time Command
 * Notification Handler
