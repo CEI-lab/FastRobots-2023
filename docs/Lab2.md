@@ -201,7 +201,7 @@ This is a summary of the code running on your Artemis, found in the ```ble_ardui
 * These three types are what we recommend, and should be sufficient for this class (but feel free to use other types if you feel the need):
   * BLEFloatCharacteristic
   * BLEIntCharacteristic
-  * BLECStringChracteristic – this is not provided by ArduinoBLE but defined in BLECStringCharacteristic.h
+  * BLECStringCharacteristic – this is not provided by ArduinoBLE but defined in BLECStringCharacteristic.h
 * For receiving data on the Artemis, only use BLECStringCharacteristic as it defines a writable string GATT characteristic for communicating robot commands
 * Relevant functions:
   * Constructor – parameters for constructors of relevant characteristics are found at the top of ```ble_arduino.ino```,  or [here](https://docs.arduino.cc/retired/archived-libraries/CurieBLE#bleservice-class) for all the characteristics
