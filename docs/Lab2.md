@@ -200,7 +200,7 @@ Though a characteristic value can be up to 512 bytes long (according to the Blue
 
 3. **BLExCharacteristic**
 
-* These are constructors for handling different types of data provided by ArduinoBLE. Please read [this page] (https://docs.arduino.cc/retired/archived-libraries/CurieBLE#blecharacteristic-class) for more details on types, syntax, parameters and examples.
+* These are constructors for handling different types of data provided by ArduinoBLE. Please read [this page](https://docs.arduino.cc/retired/archived-libraries/CurieBLE#blecharacteristic-class) for more details on types, syntax, parameters and examples.
 * These three types are what we recommend, and should be sufficient for this class (but feel free to use other types if you feel the need):
   * BLEFloatCharacteristic
   * BLEIntCharacteristic
@@ -216,12 +216,12 @@ Though a characteristic value can be up to 512 bytes long (according to the Blue
 
 4. **RobotCommand**
 * This is a class defined in RobotCommand.h
-* RobotCommand is used when handling a robot command that the Artemis receives, of the string format “<cmd_type>:<value1>|<value2|<value3>|...”
-  * <cmd_type> is an integer
-  * <value> can be a float (or double), integer, or string literal
+* RobotCommand is used when handling a robot command that the Artemis receives, of the string format “\<cmd_type\>:\<value1\>|\<value2\>|\<value3\>|...”
+  * \<cmd_type\> is an integer
+  * \<value\> can be a float (or double), integer, or string literal
 * Used in the function handle_command() in ```ble_arduino.ino```.
 * Relevant functions:
-  * Constructor – instantiates object; takes a string (character array) to specify the delimiters used to tokenize the robot command string e.g. ```RobotCommand robot_cmd(":|");``` where “:|” is the delimiter
+  * Constructor – instantiates object; takes a string (character array) to specify the delimiters used to tokenize the robot command string e.g. ```RobotCommand robot_cmd(":|");``` where “:\|” is the delimiter
   * ```set_cmd_string( value, valueWritten );``` – set the command string from the characteristic value received for the RobotCommand object instantiated
   * ```get_command_type( cmd_type );``` – returns 1 if successful; sets ```cmd_type``` as the integer value sent by the other device
   * ```get_next_value( val );``` – returns 1 if successful; extracts the next value from the command string and assigns it to ```val```; ensure that the type of val is what is expected (by ensuring you handle ```cmd_type``` properly in case statements in ```handle_command()```)
