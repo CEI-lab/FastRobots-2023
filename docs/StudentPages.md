@@ -6,7 +6,7 @@
 # Student Pages, Spring 2023
 
 * [Adetunji, Rotimi](https://mimirotimi.github.io/#rotimi-adetunji)
-* Alade, Tobi
+* [Alade, Tobi](https://abioticfactor.github.io/fast-robots/)
 * [Barsz, Rochelle](https://rochelleb1.github.io/FastRobotsSP23/)
 * [Bejoy, Bhadra](https://bhadrab.github.io/ECE4160/)
 * [Buchanan, Will](https://will-db.github.io/ece4960-fast-robots/)
