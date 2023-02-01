@@ -2,7 +2,7 @@
 
 [Return to main page](index.md)
 
-# Lab 3 IMU
+# Lab 4: IMU
 
 ## Objective
 The purpose of this lab is to add the IMU to your robot, start running the Artemis+sensors from a battery, and record a stunt on your RC robot. 
