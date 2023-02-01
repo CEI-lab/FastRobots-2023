@@ -33,13 +33,14 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 
 ## Instructions
 
-<img src="Figs/UnderConstruction.png" width="500">
-
 1. Using the Arduino library manager, install the SparkFun VL53L1X 4m laser distance sensor library.
 2. Connect the QWIIC break-out board to the Artemis
 3. Connect the first ToF sensor to the QWIIC breakout board.
    - You will have to cut one end of a QWIIC cable and solder the other to your sensor. You have two long cables and two short ones, choose wisely. 
    - Think about which color attaches to SDA/SCL?
+   - The photo below is an example of a sensor with a cable. Note that the protective film has not yet been removed.
+<p align="center"><img src="./Figs/ToFsensor.jpg" width="700"></p>
+
 4. Scan the I2C channel to find the sensor
    - Go to File->Examples->Wire and open Example1_wire
    - Browse through the code to see how to use i2c commands. 
@@ -53,7 +54,8 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 
 6. Test your chosen mode 
    - Use the "..\Arduino\libraries\SparkFun_VL53L1X_4m_Laser_Distance_Sensor\examples\Example1_ReadDistance" example
-   - Document your ToF sensor range, accuracy, repeatability, and ranging time   
+   - Document your ToF sensor range, accuracy, repeatability, and ranging time
+   - The figure below is an example from 2020, when students measured the accuracy and repeatability in different lighting conditions, and timing for various code setups.   
 <p align="center"><img src="./Figs/ToF_characterization.png" width="700"></p>
 
 7. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both works. 
