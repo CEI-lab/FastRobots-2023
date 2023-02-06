@@ -55,7 +55,7 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 6. Test your chosen mode 
    - Use the "..\Arduino\libraries\SparkFun_VL53L1X_4m_Laser_Distance_Sensor\examples\Example1_ReadDistance" example
    - Document your ToF sensor range, accuracy, repeatability, and ranging time
-   - The figure below is an example from 2020, when students measured the accuracy and repeatability in different lighting conditions, and timing for various code setups.   
+   - The figure below is an example from 2020, when students measured the accuracy and repeatability in different lighting conditions, and timing for various code setups(these are not required tasks for this year), however, we highly recommend generating your plots in the Jupyter notebook to gain more familiarity with the environment, e.g. using [matplotlib](https://matplotlib.org/).    
 <p align="center"><img src="./Figs/ToF_characterization.png" width="700"></p>
 
 7. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both works. 
@@ -80,4 +80,4 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 
 ## Write-up
 
-To demonstrate that you've successfully completed the lab, please upload a brief lab report (<1.000 words), with code snippets (not included in the word count), photos, and/or videos documenting that everything worked and what you did to make it happen. 
+To demonstrate that you've successfully completed the lab, please upload a brief lab report (<1000 words), with code snippets (not included in the word count), photos, and/or videos documenting that everything worked and what you did to make it happen. 
