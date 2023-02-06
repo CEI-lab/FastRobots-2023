@@ -38,7 +38,7 @@
 * [Park, Addy](https://apark2459.github.io/)
 * [Prieto, Julian](https://julian-prieto67.github.io/Fast-Robots/)
 * [Romo, Ignacio](https://pages.github.coecis.cornell.edu/ir93/fast-robots/)
-* [Sangani, Eshita](http://eshitasangani@github.io)
+* [Sangani, Eshita](http://eshitasangani.github.io)
 * [Sokolova, Mariya]
 * [Speckhals, Emily](https://speckhalse.github.io/ECE4160/)
 * [Tao, Zhongqi](https://zt88.github.io/Fast-Robots/)
