@@ -42,7 +42,7 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 <p align="center"><img src="./Figs/ToFsensor.jpg" width="700"></p>
 
 4. Scan the I2C channel to find the sensor
-   - Go to File->Examples->Wire and open Example1_wire
+   - Go to File->Examples->Apollo3->Wire and open Example1_wire_I2C
    - Browse through the code to see how to use i2c commands. 
    - Run the code. Does the address match what you expected? If not, explain why.
 5. The ToF sensor has three modes, that optimize the ranging performance given the maximum expected range. Discuss the pros/cons of each mode, and think about which one could work on the final robot.
