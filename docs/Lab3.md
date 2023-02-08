@@ -82,9 +82,11 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 
 Word limit: < 1000 words
 
+This is not a strict requirement, but may be helpful in understanding what should be included in your webpage. It also helps with the flow of your report to show your understanding to the lab graders.
+
 1. Prelab
    * Note the I2C sensor address
-   * **Briefly** iscuss the approach to using 2 ToF sensors
+   * **Briefly** discuss the approach to using 2 ToF sensors
    * **Briefly** discuss placement of sensors on robot and scenarios where you will miss obstacles
    * Sketch of wiring diagram (with **brief** explanation if you want)
 2. Lab Tasks
@@ -94,5 +96,9 @@ Word limit: < 1000 words
   * 2 ToF sensors: Discussion and screenshot of sensors working in parallel
   * Tof sensor speed: Discussion on speed and limiting factor; include code snippet of how you do this
   * Time v Distance: Include graph of data sent over bluetooth (2 sensors)
-  * (5160) Discussion on infrared transmission based sensors
-  * (5160) Sensitivity of sensors to colors and textures
+  * (5000) Discussion on infrared transmission based sensors
+  * (5000) Sensitivity of sensors to colors and textures
+
+Please also include code snippets (consider using GitHub Gists) in appropriate sections if you included any written code. Do not copy and paste all your code. Include only relevant functions used for each task.
+
+Include screenshots of relevant results (i.e. messages received in Jupyter Notebook, serial terminal print of messages received by Artemis).
