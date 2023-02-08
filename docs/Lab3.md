@@ -34,7 +34,9 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 ## Instructions
 
 1. Using the Arduino library manager, install the SparkFun VL53L1X 4m laser distance sensor library.
+
 2. Connect the QWIIC break-out board to the Artemis
+
 3. Connect the first ToF sensor to the QWIIC breakout board.
    - You will have to cut one end of a QWIIC cable and solder the other to your sensor. You have two long cables and two short ones, choose wisely. 
    - Think about which color attaches to SDA/SCL?
