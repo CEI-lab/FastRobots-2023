@@ -80,4 +80,19 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 
 ## Write-up
 
-To demonstrate that you've successfully completed the lab, please upload a brief lab report (<1000 words), with code snippets (not included in the word count), photos, and/or videos documenting that everything worked and what you did to make it happen. 
+Word limit: < 1000 words
+
+1. Prelab
+   * Note the I2C sensor address
+   * **Briefly** iscuss the approach to using 2 ToF sensors
+   * **Briefly** discuss placement of sensors on robot and scenarios where you will miss obstacles
+   * Sketch of wiring diagram (with **brief** explanation if you want)
+2. Lab Tasks
+  * Picture of your ToF sensor connected to your QWIIC breakout board
+  * Screenshot of Artemis scanning for I2C device (and discussion on I2C address)
+  * Discussion and pictures of sensor data with chosen mode
+  * 2 ToF sensors: Discussion and screenshot of sensors working in parallel
+  * Tof sensor speed: Discussion on speed and limiting factor; include code snippet of how you do this
+  * Time v Distance: Include graph of data sent over bluetooth (2 sensors)
+  * (5160) Discussion on infrared transmission based sensors
+  * (5160) Sensitivity of sensors to colors and textures
