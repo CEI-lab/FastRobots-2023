@@ -36,14 +36,20 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 
 1. Connect the necessary power and signal inputs to one motor driver (with parallel coupled outputs) from the Artemis. For now, keep the motor driver (VIN) powered from an external power supply with a controllable current limit; this will make debugging easier. 
    - What are reasonable settings for the power supply? 
+   
 4. Use analogWrite commands to generate PWM signals and show (using an oscilloscope) that you can regulate the power on the motor driver output. 
+
 5. Take your car apart!
    - Unscrew and remove the top (blue) shell from your car. You may have to cut the wires for the chassis LEDs (we will not be using them in this class). *Don't loose the screws!!*
    - Locate and unmount the control PCB and cut wires to the motors and the battery connector as close to the board as possible.
+
 6. Place your car on its side, such that the spinning wheels are elevated, and show that you can run the motor in both directions. 
    - Keep the motor driver powered on an external power supply for now, but remember to connect all grounds in your circuit. 
+
 7. Power the motor driver from the 850mAh battery instead of the power supply (double check color codes before you plug it in), and make sure your code works when the circuit is fully battery powered. 
+
 8. Repeat the process for the second motor and motor driver. One 850mAh battery should be enough to power both motors. 
+
 9. Install everything inside your car chassis, and try running the car on the ground. 
    - Remember, the car may flip, so try to avoid having components that stick out beyond the wheels.
    - Also, the car is very fast, so test it in the hallway and add a timer in code so that it stops automatically after a short amount of time. That way you don't have to try to catch it when it gets away from you!
