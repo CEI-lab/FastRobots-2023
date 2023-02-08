@@ -11,7 +11,7 @@ All deadlines are specified on Canvas.
 | 1  (TR) | Class intro, Data, Comms, Linear Algebra refresh, T-matrices         | [Lab 1, Artemis](Lab1.md), [Make and share your Github page ](./tutorials/webpage_help.md) |
 | 2  (TR) | Sensors (TOF, proximity, encoders, IMU) and sensor fusion            | [Lab 2, Bluetooth communication](Lab2.md)                                                  |
 | 3  (TR) | Actuators, circuits and routing, EMI                                 | [Lab 3, TOF](Lab3.md)                                                           | 
-| 4  (TR) | Linear systems, PID control                                          | Lab 4, IMU                                                                      |
+| 4  (TR) | Linear systems, PID control                                          | [Lab 4, IMU](Lab4.md)                                                           |
 | 5  (TR) | Linearizing, controllability                                         | Lab 5, Motor driver and open loop control                                       |
 | 6  ( R) | Observability/LQG/KF                                                 | No lab                                                                          |
 | 7  (TR) | Map representations, Graph search                                    | Lab 6, PID speed control                                                        |
