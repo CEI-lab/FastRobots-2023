@@ -76,24 +76,28 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
   
 #### Cut the Coord!
 
-1. Unplug the USB C cable from the Artemis, and connect the 850mAh Li-Ion battery to the power JST connector. 
-   - *Note that the plug has no orientation - be very careful to hook the red wire up to the pin labelled "+" on the board!*
-   - Ensure that the board still runs. Do you still receive Bluetooth data? If not, do you still see the visual indication/LED blinking you set up above? (This should help you debug where potential errors are located)
+5. Unplug the USB C cable from the Artemis, and connect a battery instead. You have two batteries available. One is 3.7V 850mAh, you will use this one to power the motors through the motor drivers. The other is 3.7V 650mAh and comes with the RC car, you will use this one to power the digital electronics (Artemis, sensors, etc.).
+   - Consider why we are asking you to use the battery with more capacity to drive the motors. 
+   - Solder the cables from 650mAh battery to the JST connector as shown in the image below. *Do not short the wires!! Prepare one wire first, apply heat shrink tubing, solder the wire to the JST connector, heat the shrink tubing. Then proceed to cut the next wire and repeat the steps.*
+   - Triple check that the JST connector is oriented correctly. Does the red wire connect to the "+" on the board?
+   - Connect the power and ensure that the board still runs. Do you still receive Bluetooth data? If not, do you still see the visual indication/LED blinking you set up above? (This should help you debug where potential errors are located)
+<img src="./Figs/Battery.png" width="600">
+
 
 #### Record a stunt!
 
-1. Mount the 650mAh battery in the RC car, and plug in the batteries in the remote control.
-2. Spend 5min playing around with the car. Try to get a feel for how slow/fast it can drive forwards/backwards/turn, accelerations, etc. Record a video to show what you have tried, and discuss what you observe. This will help you establish a baseline for what you expect to see if everything works when you are running the car autonomously. 
-3. Finally, using tape/zip ties, mount the Artemis with battery and sensors onto the car, and try to record a stunt of your choosing (e.g. drive straight and do a couple of turns, do a flip, etc.). To demonstrate that your system works, please include both a video and a graph showing the data you collected during the stunt in your write-up. 
+7. Mount the 850mAh battery in the RC car. Note that the standard plug on the 850mAh battery can be attached in either orientation, so *be careful* to plug it in in the right orientation (red-to-red and black-to-black wire). Add AA batteries to the remote control.
+8. Spend 5min playing around with the car (in the hallway or outside). Try to get a feel for how slow/fast it can drive forwards/backwards/turn, accelerations, etc. Record a video to show what you have tried, and discuss what you observe. This will help you establish a baseline for what you expect to see if everything works when you are running the car autonomously. 
+9. Finally, using tape/zip ties, mount the Artemis with battery and sensors onto the car, and try to record a stunt of your choosing (e.g. drive straight and do a couple of turns, do a flip, etc.). To demonstrate that your system works, please include both a video and a graph showing the data you collected during the stunt in your write-up. 
    - If you run out of time during your lab/open lab hours, note that the laminate floor in most of Phillips Hall will work just as well for this task as the floor in PH427.
 
 #### Pack up
 
-1. Don't forget to disconnect your batteries from both the Artemis and the robot.
-   - From this point onwards, always show up to the lab section with charged batteries. You can charge the 650mAh battery using the USB charger that came with the car, and use either the Artemis board to charge your 850mAh battery or one of the many chargers in the lab.
+9. Don't forget to disconnect your batteries from both the Artemis and the robot.
+   - From this point onwards, always show up to the lab section with charged batteries. You can charge the 650mAh battery through USB using the Artemis board's built-in charger, and the 850mAh battery in one of the many chargers in the lab.
    - You can take one of the 850mAh batteries home with you. Please leave the rest in the lab for everyone to share.
    - *If you have used one of the shared 850mAh batteries, please plug it into the lab chargers before you leave!* 
-2. If you're done playing with your RC car, please also take out the AA batteries from the remote control and hand them back to the TAs so we can use them for following labs. Starting lab 5, we will no longer use the remote control.
+10. If you're done playing with your RC car, please also take out the AA batteries from the remote control and hand them back to the TAs so we can use them for following labs. Starting lab 5, we will no longer use the remote control.
 
 #### Additional Tasks for 5000-level students
 
