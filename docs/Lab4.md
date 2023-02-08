@@ -78,7 +78,7 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
 
 5. Unplug the USB C cable from the Artemis, and connect a battery instead. You have two batteries available. One is 3.7V 850mAh, you will use this one to power the motors through the motor drivers. The other is 3.7V 650mAh and comes with the RC car, you will use this one to power the digital electronics (Artemis, sensors, etc.).
    - Consider why we are asking you to use the battery with more capacity to drive the motors. 
-   - Solder the cables from 650mAh battery to the JST connector as shown in the image below. *Do not short the wires!! Prepare one wire first, apply heat shrink tubing, solder the wire to the JST connector, heat the shrink tubing. Then proceed to cut the next wire and repeat the steps.*
+   - Solder the cables from 650mAh battery to the JST connector as shown in the image below. Be *careful* not to short the battery leads when you do this. Cut, solder, and add heat shrink to one wire at a time. 
    - Triple check that the JST connector is oriented correctly. Does the red wire connect to the "+" on the board?
    - Connect the power and ensure that the board still runs. Do you still receive Bluetooth data? If not, do you still see the visual indication/LED blinking you set up above? (This should help you debug where potential errors are located)
 <img src="./Figs/Battery.png" width="600">
