@@ -101,6 +101,6 @@ This is not a strict requirement, but may be helpful in understanding what shoul
   * (5000) Discussion on infrared transmission based sensors
   * (5000) Sensitivity of sensors to colors and textures
 
-Please also include code snippets (consider using GitHub Gists) in appropriate sections if you included any written code. Do not copy and paste all your code. Include only relevant functions used for each task.
+Please also include code snippets (consider using [GitHub Gists](https://gist.github.com)) in appropriate sections if you included any written code. Do not copy and paste all your code. Include only relevant functions used for each task.
 
-Include screenshots of relevant results (i.e. messages received in Jupyter Notebook, serial terminal print of messages received by Artemis).
+Include screenshots of relevant results.
