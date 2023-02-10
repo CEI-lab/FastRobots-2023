@@ -329,7 +329,7 @@ Please include at least one plot to support your write-up.
 
 ## Write-up
 
-Word Limit: < 600 words
+Word Limit: < 1000 words
 
 We understand that some of the sections in your webpage will overlap with the instructions in the lab handout. That is okay as long as there is no blatant copying and pasting. Paraphrase instructions in a way that shows you understand and have executed them.
 
