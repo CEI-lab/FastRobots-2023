@@ -54,7 +54,7 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
 #### Gyroscope
 
 1. Use the equations from class to compute pitch, roll, and yaw angles from the gyroscope. 
-   - Compare your output to the pitch and roll values from the accelerometer and the filtered response. Describe how they differ.
+   - Compare your output to the pitch, roll, and yaw values from the accelerometer and the filtered response. Describe how they differ.
    - Try adjusting the sampling frequency to see how it changes the accuracy of your estimated angles.
 2. Use a complimentary filter to compute an estimate of pitch and roll which is both accurate and stable. Demonstrate its working range and accuracy, and that it is not susceptible to drift or quick vibrations.
 
@@ -107,4 +107,36 @@ You're off the hook in this lab!
 
 ## Write-up
 
-To demonstrate that you've successfully completed the lab, please upload a brief lab report (<1.000 words), with code snippets (not included in the word count), photos, and/or videos documenting that everything worked and what you did to make it happen. 
+Word Limit: < 1000 words
+
+**Webpage Sections**
+This is not a strict requirement, but may be helpful in understanding what should be included in your webpage. It also helps with the flow of your report to show your understanding to the lab graders.
+
+1. Lab Tasks
+   * Set up the IMU
+     * Picture of your Artemis IMU connections
+     * Show that the IMU example code works
+     * AD0_VAL definition discussion
+     * Acceleration and gyroscope data discussion (pictures recommended)
+   * Accelerometer
+     * Image of output at {-90, 0, 90} degrees for pitch and roll (include equations)
+     * Accelerometer accuracy discussion
+     * Noise in the frequency spectrum analysis
+       * Include graphs for your fourier transform
+       * Discuss the results
+   * Gyroscope
+     * Include documentation for pitch, roll, and yaw with images of the results of different IMU positions
+     * Demonstrate the accuracy and range of the complementary filter, and discuss any design choices
+   * Sample Data
+     * Speed of sampling discussion
+     * Demonstrate collected and stored time-stamped IMU data in arrays
+     * Demonstrate 5s of ToF and IMU data sent over Bluetooth
+   * Cut the Coord
+     * Discussion on battery distinction
+     * Picture of your Artemis connected to the 650mAh battery
+   * Record a Stunt
+      * Include a video (or some videos) of you playing with the car and discuss your observations
+        * Without Artemis
+        * With Artemis, and plot data sent over Bluetooth
+
+Add code (consider using [GitHub Gists](https://gist.github.com)) where you think is relevant (DO NOT paste your entire code).
