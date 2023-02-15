@@ -58,8 +58,11 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 
 <p align="center"><img src="Figs/MotorDriver.jpg" width="400"></p>
 
-10. Explore the lower limit for which each motor still turns while on the ground; note it may require slightly more power to start from rest compared to when it is running. 
-11. If your motors do not spin at the same rate, you will need to implement a calibration factor. To demonstrate that your robot can move in a fairly straight line, record a video of your robot following a straight line (e.g. a piece of tape) for at least 2m/6ft. It may be helpful to note that each of the vinyl tiles in the lab is 1-by-1 foot. The robot should start centered on the line, and still partially overlap with the line at the end. 
+10. Explore the lower limit in PWM value for which the robot moves forward and on-axis turns while on the ground; note it may require slightly more power to start from rest compared to when it is running. 
+
+12. If your motors do not spin at the same rate, you will need to implement a calibration factor. To demonstrate that your robot can move in a fairly straight line, record a video of your robot following a straight line (e.g. a piece of tape) for at least 2m/6ft. 
+   - It may be helpful to note that each of the vinyl tiles in the lab is 1-by-1 foot. 
+   - The robot should start centered on the line, and still partially overlap with the line at the end. 
 
 12. Demonstrate open loop, untethered control of your robot - add in some turns. 
 
@@ -68,7 +71,7 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 
 1. Consider what frequency analogWrite generates. Is this adequately fast for these motors? Can you think of any benefits to manually configuring the timers to generate a faster PWM signal?
 
-2. Write a program that ramps up and down in speed slowly. Reporting the values to your computer using Bluetooth either during operation or when your ramp up/down procedure is over. Use this setup to document accurately what range of speeds you can achieve. (If your sensors are still attached, it may be easiest to use them to help you determine speed). 
+2. Relating to task 10 above, try to (experimentally) figure out not just at what PWM value the robot starts moving (forward and on-axis turns), but also the lowest PWM value at which you can keep the robot running once it is in motion. How quickly can you have the robot settle at its slowest speed? (First program a value that overcomes static friction and gets the robot moving, then a value that keeps it moving as slowly as possible.)
 
 ## Write-up
 To demonstrate that you've successfully completed the lab, please upload a brief lab report (<800 words), with code snippets (not included in the word count), photos, and videos documenting that everything work and what you did to make it happen. 
