@@ -34,7 +34,8 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 
 ## Instructions
 
-1. Connect the necessary power and signal inputs to one motor driver (with parallel coupled outputs) from the Artemis. For now, keep the motor driver (VIN) powered from an external power supply with a controllable current limit; this will make debugging easier. 
+1. Connect the necessary power and signal inputs to one dual motor driver (where inputs/outputs are hooked up in parallel as discussed in lecture) from the Artemis. 
+   - For now, keep the motor driver (VIN) powered from an external power supply with a controllable current limit; this will make debugging easier. 
    - What are reasonable settings for the power supply? 
    
 4. Use analogWrite commands to generate PWM signals and show (using an oscilloscope) that you can regulate the power on the motor driver output. 
