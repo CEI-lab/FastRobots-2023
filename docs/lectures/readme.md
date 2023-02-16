@@ -10,9 +10,12 @@ Lecture slides will be uploaded on this page. Recorded lectures are available vi
 * [Lecture 4 - Sensors II / IMU](./FastRobots-4-IMU.pdf), [code*](./Lecture4-IMU.ino)
 * [Lecture 5 - EMI and Wiring](./FastRobots-5-Wiring.pdf), [worksheet](./FastRobots-5-Wiring_worksheet.pdf)
 * [Lecture 6 - Batteries and Actuators](./FastRobots-6-Actuators.pdf)
+* [Lecture 7 - PID control](./FastRobots-7-PID.pdf) **
+* [Lecture 8 - PID control, continued](./FastRobots-8-PID_continued.pdf), [worksheet](https://bit.ly/3LIAxae)
 * 
 
-*This code was uploaded at a random point during an interactive lecture, feel free to check it out, but use with caution!
+* This code was uploaded at a random point during an interactive lecture, feel free to check it out, but use with caution!
+** Note: since this lecture was covered by Jonathan, these slides are from last year.
 
 
 
