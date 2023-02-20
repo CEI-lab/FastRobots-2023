@@ -54,9 +54,9 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 9. Install everything inside your car chassis, and try running the car on the ground. 
    - Remember, the car may flip, so try to avoid having components that stick out beyond the wheels.
    - Also, the car is very fast, so test it in the hallway and add a timer in code so that it stops automatically after a short amount of time. That way you don't have to try to catch it when it gets away from you!
-   - Here is an example of a car with everything hooked up (note that we did not use QWIIC connectors in this one). Remember that the implementation details are entirely up to you:
+   - Here is an example of a car with everything hooked up (note that we did not use QWIIC connectors in this one). Remember that the implementation details are entirely up to you: <img src="Figs/MotorDriver.jpg" width="400">
 
-<p align="center"><img src="Figs/MotorDriver.jpg" width="400"></p>
+<!-- <p align="center"><img src="Figs/MotorDriver.jpg" width="400"></p> -->
 
 10. Explore the lower limit in PWM value for which the robot moves forward and on-axis turns while on the ground; note it may require slightly more power to start from rest compared to when it is running. 
 
