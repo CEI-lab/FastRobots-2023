@@ -56,7 +56,8 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
    - Also, the car is very fast, so test it in the hallway and add a timer in code so that it stops automatically after a short amount of time. That way you don't have to try to catch it when it gets away from you!
    - Here is an example of a car with everything hooked up (note that we did not use QWIIC connectors in this one). Remember that the implementation details are entirely up to you:
    
-   <img src="Figs/MotorDriver.jpg" width="400">
+   ![motordriver](Figs/MotorDriver.jpg)
+   **Figure 1** Motor Driver Exmaple
 
 <!-- <p align="center"><img src="Figs/MotorDriver.jpg" width="400"></p> -->
 
