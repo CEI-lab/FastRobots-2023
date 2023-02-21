@@ -54,7 +54,8 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 7. Install everything inside your car chassis, and try running the car on the ground. 
    - Remember, the car may flip, so try to avoid having components that stick out beyond the wheels.
    - Also, the car is very fast, so test it in the hallway and add a timer in code so that it stops automatically after a short amount of time. That way you don't have to try to catch it when it gets away from you!
-   - Here is an example of a car with everything hooked up (note that we did not use QWIIC connectors in this one). Remember that the implementation details are entirely up to you. (See image below step 10)
+   - Here is an example of a car with everything hooked up (note that we did not use QWIIC connectors in this one). Remember that the implementation details are entirely up to you.
+   <p align="center"><img src="Figs/MotorDriver.jpg" width="400"></p>
 
 8. Explore the lower limit in PWM value for which the robot moves forward and on-axis turns while on the ground; note it may require slightly more power to start from rest compared to when it is running. 
 
@@ -64,8 +65,6 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 
 10. Demonstrate open loop, untethered control of your robot - add in some turns. 
 
-<p align="center"><img src="Figs/MotorDriver.jpg" width="400"></p>
-
 ## Additional tasks for 5000-level students
 
 1. Consider what frequency analogWrite generates. Is this adequately fast for these motors? Can you think of any benefits to manually configuring the timers to generate a faster PWM signal?
@@ -73,5 +72,29 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 2. Relating to task 8 above, try to (experimentally) figure out not just at what PWM value the robot starts moving (forward and on-axis turns), but also the lowest PWM value at which you can keep the robot running once it is in motion. How quickly can you have the robot settle at its slowest speed? (First program a value that overcomes static friction and gets the robot moving, then a value that keeps it moving as slowly as possible.)
 
 ## Write-up
-To demonstrate that you've successfully completed the lab, please upload a brief lab report (<800 words), with code snippets (not included in the word count), photos, and videos documenting that everything work and what you did to make it happen. 
 
+Word Limit: < 800 words
+
+**Webpage Sections**
+
+This is not a strict requirement, but may be helpful in understanding what should be included in your webpage. It also helps with the flow of your report to show your understanding to the lab graders.
+
+1. Prelab
+   * Diagram with your intended connections between the motor drivers, Artemis, and battery (with specific pin numbers)
+   * Battery discussion
+2. Lab Tasks
+   * Picture of your setup with power supply and oscilloscope hookup
+   * Power supply setting discussion
+   * Include the code snippet for your analogWrite code that tests the motor drivers
+   * Image of your oscilloscope
+   * Short video of wheels spinning as expected (including code snippet it's running on)
+   * Short video of both wheels spinning (with battery driving the motor drivers)
+   * Picture of all the components secured in the car
+     * Consider labeling your picture if you can't see all the components
+   * Lower limit PWM value discussion
+   * Calibration demonstration (discussion, video, code, pictures as needed)
+   * Open loop code and video
+   * (5000) analogWrite frequency discussion (include screenshots and code)
+   * (5000) Lowest PWM value speed (once in motion) discussion (include videos where appropriate)
+
+Add code (consider using [GitHub Gists](https://gist.github.com)) where you think is relevant (DO NOT paste your entire code).
