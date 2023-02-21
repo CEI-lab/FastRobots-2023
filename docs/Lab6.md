@@ -94,11 +94,11 @@ Below is an example of the robot drifting and doing a 180 degree turn as well as
 
 [![Drift](https://img.youtube.com/vi/aHLyelvja5k/1.jpg)](https://youtu.be/aHLyelvja5k "180 Drift")
 
-<img src="./Figs/TaskBSetpoint.png" width="400">
+<img src="./Figs/Lab6_TaskBSetpoint.png" width="400">
 
-<img src="./Figs/TaskBAngle.png" width="400">
+<img src="./Figs/Lab6_TaskBAngle.png" width="400">
 
-<img src="./Figs/TaskBMotorOffsets.png" width="400">
+<img src="./Figs/Lab6_TaskBMotorOffsets.png" width="400">
 
    > **<mark> NOTE: If you choose this task, your eventual stunt will involve speeding towards a wall until you are 3ft (914mm = 3 floor tiles in the lab) out, then turning 180 degrees and driving back from where you came (as fast as possible). Just like in Task A, lab 7 will involve sensor fusion on the time of flight sensor to help you estimate the distance to the wall at a high sampling rate. 
 
