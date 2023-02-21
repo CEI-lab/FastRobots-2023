@@ -38,31 +38,31 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
    - For now, keep the motor driver (VIN) powered from an external power supply with a controllable current limit; this will make debugging easier. 
    - What are reasonable settings for the power supply? 
    
-4. Use analogWrite commands to generate PWM signals and show (using an oscilloscope) that you can regulate the power on the motor driver output. 
+2. Use analogWrite commands to generate PWM signals and show (using an oscilloscope) that you can regulate the power on the motor driver output. 
 
-5. Take your car apart!
+3. Take your car apart!
    - Unscrew and remove the top (blue) shell from your car. You may have to cut the wires for the chassis LEDs (we will not be using them in this class). *Don't loose the screws!!*
    - Locate and unmount the control PCB and cut wires to the motors and the battery connector as close to the board as possible.
 
-6. Place your car on its side, such that the spinning wheels are elevated, and show that you can run the motor in both directions. 
+4. Place your car on its side, such that the spinning wheels are elevated, and show that you can run the motor in both directions. 
    - Keep the motor driver powered on an external power supply for now, but remember to connect all grounds in your circuit. 
 
-7. Power the motor driver from the 850mAh battery instead of the power supply (double check color codes before you plug it in), and make sure your code works when the circuit is fully battery powered. 
+5. Power the motor driver from the 850mAh battery instead of the power supply (double check color codes before you plug it in), and make sure your code works when the circuit is fully battery powered. 
 
-8. Repeat the process for the second motor and motor driver. One 850mAh battery should be enough to power both motors. 
+6. Repeat the process for the second motor and motor driver. One 850mAh battery should be enough to power both motors. 
 
-9. Install everything inside your car chassis, and try running the car on the ground. 
+7. Install everything inside your car chassis, and try running the car on the ground. 
    - Remember, the car may flip, so try to avoid having components that stick out beyond the wheels.
    - Also, the car is very fast, so test it in the hallway and add a timer in code so that it stops automatically after a short amount of time. That way you don't have to try to catch it when it gets away from you!
    - Here is an example of a car with everything hooked up (note that we did not use QWIIC connectors in this one). Remember that the implementation details are entirely up to you. (See image below step 10)
 
-10. Explore the lower limit in PWM value for which the robot moves forward and on-axis turns while on the ground; note it may require slightly more power to start from rest compared to when it is running. 
+8. Explore the lower limit in PWM value for which the robot moves forward and on-axis turns while on the ground; note it may require slightly more power to start from rest compared to when it is running. 
 
-12. If your motors do not spin at the same rate, you will need to implement a calibration factor. To demonstrate that your robot can move in a fairly straight line, record a video of your robot following a straight line (e.g. a piece of tape) for at least 2m/6ft. 
+9. If your motors do not spin at the same rate, you will need to implement a calibration factor. To demonstrate that your robot can move in a fairly straight line, record a video of your robot following a straight line (e.g. a piece of tape) for at least 2m/6ft. 
    - It may be helpful to note that each of the vinyl tiles in the lab is 1-by-1 foot. 
    - The robot should start centered on the line, and still partially overlap with the line at the end. 
 
-12. Demonstrate open loop, untethered control of your robot - add in some turns. 
+10. Demonstrate open loop, untethered control of your robot - add in some turns. 
 
 <p align="center"><img src="Figs/MotorDriver.jpg" width="400"></p>
 
@@ -70,7 +70,7 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 
 1. Consider what frequency analogWrite generates. Is this adequately fast for these motors? Can you think of any benefits to manually configuring the timers to generate a faster PWM signal?
 
-2. Relating to task 10 above, try to (experimentally) figure out not just at what PWM value the robot starts moving (forward and on-axis turns), but also the lowest PWM value at which you can keep the robot running once it is in motion. How quickly can you have the robot settle at its slowest speed? (First program a value that overcomes static friction and gets the robot moving, then a value that keeps it moving as slowly as possible.)
+2. Relating to task 8 above, try to (experimentally) figure out not just at what PWM value the robot starts moving (forward and on-axis turns), but also the lowest PWM value at which you can keep the robot running once it is in motion. How quickly can you have the robot settle at its slowest speed? (First program a value that overcomes static friction and gets the robot moving, then a value that keeps it moving as slowly as possible.)
 
 ## Write-up
 To demonstrate that you've successfully completed the lab, please upload a brief lab report (<800 words), with code snippets (not included in the word count), photos, and videos documenting that everything work and what you did to make it happen. 
