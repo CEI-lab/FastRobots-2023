@@ -29,7 +29,7 @@ No matter which task you take on, it will be essential that you first setup a go
 A good technique will be to: 
 1. Have the robot controller start on an input from your computer sent over Bluetooth
 2. Execute PID control over a fixed amount of time (e.g. 5s) while storing debugging data in arrays.
-3. Remember to have a hard stop implemented directly on your Artemis, so that your robot will stop even if the Bluetooth connection fails.
+   - Remember to have a hard stop implemented directly on your Artemis, so that your robot will stop even if the Bluetooth connection fails.
 4. Upon completion of the behavior, send the debugging data back to the computer over Bluetooth. 
 
 Debugging data may for example include sensor data with time stamps similar to what you implemented in lab 3-4, output from the individual branches of your PID controller, and/or the input that you are sending to your motors. Remember, however, the storage cannot exceed the internal RAM of 384kB.  If you plan to do a lot of tweaking of your gains, you can also consider writing a Bluetooth command that lets you update the gains without having to reprogram the Artemis. 
