@@ -108,4 +108,22 @@ Implement wind-up protection for your integrator. Argue for why this is necessar
 
 ## Write-up
 
-To demonstrate that you've successfully completed the lab, please upload a brief lab report (<800 words), with code snippets (not included in the word count), graphs of sampled data, videos and/or photos documenting that everything worked reliably and what you did to make it happen. 
+Word Limit: < 800 words
+                 
+**Webpage Sections**
+
+This is not a strict requirement, but may be helpful in understanding what should be included in your webpage. It also helps with the flow of your report to show your understanding to the lab graders. *This lab is more open ended in terms of the steps taken to reach the end goal, so just make sure to document your process you take to complete your task, including testing and debugging steps!*
+
+1. Prelab
+   * Clearly describe how you handle sending and receiving data over Bluetooth
+   * Consider adding code snippets as necessary to showcase how you implemented this on Arduino and Python
+
+2. Lab Tasks
+   * P/I/D discussion (Kp/Ki/Kd values chosen, why you chose a combination of controllers, etc.)
+   * Range/Sampling time discussion
+   * Graphs, code, videos, images, discussion of reaching task goal 
+   * A: Graph data should include Tof vs time and Motor input vs time (and whatever helps with debugging)
+   * B: Graph data should at least include theta vs time (you can also consider angular velocity, motor input, etc)
+   * (5000) Wind-up implementation and discussion
+   
+Add code (consider using [GitHub Gists](https://gist.github.com)) where you think is relevant (DO NOT paste your entire code).
