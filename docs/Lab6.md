@@ -5,7 +5,7 @@
 # Lab 6: Closed-loop control (PID)
 
 ## Objective
-The purpose of this lab is to get experience with PID control. The lab is fairly open ended, you can pick whatever controller works best for your system (P, PI, PID, PD). Your hand-in will be judged upon your demonstrated understanding of PID control and practical implementation constraints, and the quality of your solution. 
+The purpose of this lab is to get experience with PID control. The lab is fairly open ended, you can pick whatever controller works best for your system. 4000-level students can choose between P, PI, PID, PD; 5000-level students can choose between PI and PID controllers. Your hand-in will be judged upon your demonstrated understanding of PID control and practical implementation constraints, and the quality of your solution. 
 
 This lab is part of a series of labs (6-8) on PID control, sensor fusion, and stunts. 
 This week you can choose to do either position control or orientation control. The former is easier and a good choice if you a very strained for time. The latter is a little harder, but will be of direct use in future labs (it is also more fun!). Whatever you choose, spend this week getting the basic behavior working. While we give you tips for improving/speeding up your controller in this lab, if you run out of time, you can optimize more over the coming weeks. 
@@ -102,6 +102,9 @@ Below is an example of the robot drifting and doing a 180 degree turn as well as
 
    > **<mark> NOTE: If you choose this task, your eventual stunt will involve speeding towards a wall until you are 3ft (914mm = 3 floor tiles in the lab) out, then turning 180 degrees and driving back from where you came (as fast as possible). Just like in Task A, lab 7 will involve sensor fusion on the time of flight sensor to help you estimate the distance to the wall at a high sampling rate. 
 
+## Tasks for 5000-level students
+   
+Implement wind-up protection for your integrator. Argue for why this is necessary (you may for example demonstrate how your controller works reasonably independent of floor surface). 
 
 ## Write-up
 
