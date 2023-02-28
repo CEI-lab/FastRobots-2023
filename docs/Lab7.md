@@ -27,7 +27,7 @@ We will have a few setups in and just outside of the labs with crash-pillows mou
 
 Before you show up to lab, try implementing a Kalman Filter in your Jupyter Notebook. Here, we provide access to a trial run gathered in 2022; in this trial we sampled ToF and motor power with sampling frequency ???, while driving the robot towards the wall using position control. We also completed a step response and estimated d = ??? and m = ???. Note that all units are in mm and seconds. 
 
-1. Using the dummy values from above, estimate your A and B matrix. 
+1. Using the values given above, estimate your A and B matrix. 
 
 2. For the Kalman Filter to work well, you will need to specify your process noise and sensor noise covariance matrices. 
    - Try to reason about ballpark numbers for the variance of each state variable and sensor input. 
