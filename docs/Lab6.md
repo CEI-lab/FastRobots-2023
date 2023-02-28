@@ -40,7 +40,7 @@ Debugging data may for example include sensor data with time stamps similar to w
 Choose one of the following two tasks. The objective will be to achieve reliable and accurate, yet fast control. Note that the task you choose in this lab will eventually create the basis of the stunt you can attempt in Lab 8. 
 
 **Tips and tricks:**
-   - _LOG DATA:_ If you don't want to repeat work during Lab 7, be sure to log all data (time stamped sensor values and motor outputs), as well as setup variables from at least one successful run.
+   - _LOG DATA:_ If you don't want to repeat work during Lab 7, be sure to log all data (time stamped sensor values and motor outputs), as well as setup variables from at least one successful run. Even if you are doing orientation control, be sure to log ToF data as you speed towards the wall as well. 
    - _Lectures:_ Brush up on your PID control skills by checking out [Lectures 7 and 8](https://cei-lab.github.io/ECE4960-2023/lectures/).
    - _PID library:_ There exists an [Arduino PID library](https://playground.arduino.cc/Code/PIDLibrary/). You are welcome to use this library if you prefer, but we will only offer limited TA support if you run into issues. Implementing a basic PID controller from scratch is easy (<10 lines of code), and will give you more freedom in dealing with noise, wind-up, and system non-linearities. 
    - _Start simple:_ E.g. with a proportional controller running at low speeds and a generous setpoint, then you can work your way up to faster speeds, more advanced control, and more difficult setpoints if you have time. 
@@ -53,7 +53,7 @@ Choose one of the following two tasks. The objective will be to achieve reliable
    - _Anything goes:_ The goal is a working system. When you have a reasonable control setup working, you should feel free to add any "hacks" that will improve your robot performance in a reliable way. If you don't have time to implement them, discussing what you imagine would help can still get you grading points. 
    - _Motor drivers:_ Recall [Lecture 6 on Actuators](https://cei-lab.github.io/ECE4960-2022/lectures/FastRobots-6-Actuators.pdf) and that the motor drivers have both coasting and active breaking modes. These might come in handy.
 
-### Task A: Don't Hit the Wall!!
+### Task A: Position Control
 
 Again, if you are very low on time this week, this task is a good choice. 
 
@@ -75,11 +75,11 @@ Corresponding videos are here:
 > **<mark> NOTE: If you choose this task, your eventual stunt will involve speeding towards the 1ft position (where a small sticky matt will be located), then doing a vertical flip and driving back in the direction from where you came. In this lab you will be limited by sensor sampling rate and you may have to lower the motor speed accordingly. In Lab 7 we will look at sensor fusion as a way to overcome this problem.
 
 
-### Task B: Drift much?
+### Task B: Orientation Control
 
 To lower your overall class workload, this task is a good choice.
    
-For this task, you will have the robot drive fast forward, then turn with drift to do a 180 degree turn, and return in the direction it came from without stopping. The PID controller should be controlling the orientation of your robot by introducing a difference in motor speeds. Before trying to get your car to drift, try controlling the orientation of your car while it is stationary, then introduce a base speed. 
+For this task, you will have the robot drive fast forward toward a wall, then turn with drift to do a 180 degree turn, and return in the direction it came from without stopping. The PID controller should be controlling the orientation of your robot by introducing a difference in motor speeds. Before trying to get your car to drift, try controlling the orientation of your car while it is stationary, then introduce a base speed. To make your data useful for lab 7, be sure to start 4m from a wall and get within 1m before turning. 
 
 Beyond the considerations mentioned above, think about the following:
   - How do you get the orientation of the robot? How can you minimize the error introduced by discrete integration of the gyroscope? 
