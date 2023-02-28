@@ -23,28 +23,14 @@ The objective of Lab 7 is to implement a Kalman Filter, which will help you exec
 
 We will have a few setups in and just outside of the labs with crash-pillows mounted along the wall to limit damages. IF you practice at home, be sure to do the same!
 
-## Lab Procedure
+## Pre-lab
 
-### 1. Step Response
+Before you show up to lab, try implementing a Kalman Filter in your Jupyter Notebook. Here, we provide access to a trial run gathered in 2022; in this trial we sampled ToF and motor power with sampling frequency ???, while driving the robot towards the wall doing using position control. We also completed a step response and estimated d = ??? and m = ???. Note that all units are in mm and seconds. 
 
-Recall [Lectures](TBD). To implement a Kalman Filter, you will need to estimate the terms in your A and B matrices using a step response. You will then use sensor fusion to help you estimate the distance to the wall frequently, inspite of the slow sampling time of the ToF sensor. 
+1. Using the dummy values from above, estimate your A and B matrix. 
 
----
-
-#### Estimate A and B matrix parameters:
-
-Execute a step response by driving the car towards a wall while logging motor input values and ToF sensor output. 
-  1. Choose your step-size to be of similar size to the PWM value you used in Lab 6 (to keep the dynamics similar). If you never specified a PWM value directly, but rather computed one using your PID controller, pick something on the order of the maximum PWM value that was produced.  
-  2. Make sure your step time is long enough to reach steady state (you likely have to use active breaking of the car to avoid crashing into the wall).
-  3. Show graphs for the TOF sensor output, the (computed) speed, and the motor input. Please ensure that the x-axis is in seconds.
-  4. Measure both the steady state speed and the 90% rise time and compute the A and B matrix.
-
----
-
-### 2. Kalman Filter Setup
-
-1. For the Kalman Filter to work well, you will need to specify your process noise and sensor noise covariance matrices. 
-   - You will likely have to tune these according to what you see in the following step, but first try to reason about ballpark numbers for the variance of each state variable and sensor input. 
+2. For the Kalman Filter to work well, you will need to specify your process noise and sensor noise covariance matrices. 
+   - Try to reason about ballpark numbers for the variance of each state variable and sensor input. 
    - Recall that their relative values determine how much you trust your model versus your sensor measurements. If the values are set too small, the Kalman Filter will not work, if the values are too big, it will barely respond.
    - Recall that the covariance matrices take the approximate following form, depending on the dimension of your system state space and the sensor inputs.
 
@@ -53,18 +39,12 @@ sig_u=np.array([[sigma_1**2,0],[0,sigma_2**2]]) //We assume uncorrelated noise, 
 sig_z=np.array([[sigma_4**2]])
 ```
 
-2. Identify your C matrix. Recall that C is a m x n matrix, where n are the dimensions in your state space, and m are the number of states you actually measure.
+3. Identify your C matrix. Recall that C is a m x n matrix, where n are the dimensions in your state space, and m are the number of states you actually measure.
    - This could look like C=np.array([[-1,0]]), because you measure the negative distance from the wall (state 0).
 
----
+4. Initialize your state vector, x, e.g. like this: x = np.array([[-TOF[0]],[0]])
 
-### 3. Sanity Check Your Kalman Filter
-
-Next, ensure that your Kalman Filter works by running it in Jupyter Lab on pre-recorded data from Lab 6. 
-
-1. Initialize your state vector, x, e.g. like this: x = np.array([[-TOF[0]],[0]])
-
-2. Compute the discrete form of your dynamics matrix, A, and your input matrix, B. Since you will be running your Kalman Filter on old data, use the corresponding sampling time.
+5. Compute the discrete form of your dynamics matrix, A, and your input matrix, B. Since you will be running your Kalman Filter on old data, use the corresponding sampling time.
 
 ```cpp
 Ad = np.eye(n) + Delta_T * A  //n is the dimension of your state space 
@@ -72,11 +52,10 @@ Bd = Delta_t * B
 ```
 
 4. Finally, implement your Kalman Filter using the function in the code below (for ease, variable names follow the convention from the [lecture slides](TBD)). 
-   - Prepare your data: For the function to work, you'll need all input arrays to be of equal length. That means that you might have to interpolate data if for example you have fewer ToF measurements and motor input updates than you have recorded gyroscope data, due to the difference in sampling time. Numpy's linspace and interp commands can help you accomplish this.   
-   - Loop through all of the data from your pre-recorded run, while calling this function. (If you are working on orientation control, feel free to only include the first straight part of your run).
+   - Loop through all of the data from the pre-recorded run, while calling this function.
    - Remember to scale your input from 1 to the actual value of your step size (u/step_size).
-   - Plot the Kalman Filter output to demonstrate how well your Kalman Filter estimates your system state.
-   - If your Kalman Filter is off, try adjusting your covariance matrices. Discuss how/why you adjust them. 
+   - Plot the Kalman Filter output to demonstrate how well your Kalman Filter estimated the system state.
+   - If your Kalman Filter is off, try adjusting the covariance matrices. Discuss how/why you adjust them. 
 
 ```cpp
 def kf(mu,sigma,u,y):
@@ -94,12 +73,34 @@ def kf(mu,sigma,u,y):
     return mu,sigma
 ```
 
-<p align="center"><img src="Figs/Lab7_TaskA_KF.png" width="400"></p>
+ADD IMAGE FROM SAMPLED DATA
 
+---
 
-### 4. Implement the Kalman Filter on the Robot
+## Lab Procedure
 
-Finally, integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected.
+### 1. Estimate A and B matrix parameters
+
+Recall [Lectures](TBD). To implement a Kalman Filter, you will need to estimate the terms in your A and B matrices using a step response. You will then use sensor fusion to help you estimate the distance to the wall frequently, inspite of the slow sampling time of the ToF sensor. 
+
+Execute a step response by driving the car towards a wall while logging motor input values and ToF sensor output. 
+  1. Choose your step-size to be of similar size to the PWM value you used in Lab 6 (to keep the dynamics similar). If you never specified a PWM value directly, but rather computed one using your PID controller, pick something on the order of the maximum PWM value that was produced.  
+  2. Make sure your step time is long enough to reach steady state (you likely have to use active breaking of the car to avoid crashing into the wall).
+  3. Show graphs for the TOF sensor output, the (computed) speed, and the motor input. Please ensure that the x-axis is in seconds.
+  4. Measure both the steady state speed and the 90% rise time and compute the A and B matrix.
+
+---
+
+### 2. Sanity Check Your Kalman Filter with Your Own Data
+
+Next, update the parameters for the Kalman Filter in the Jupyter notebook you created in the pre-lab with your measured values, and ensure that it works by running it on your own pre-recorded data from Lab 6. If you did orientiation control, feel free to only run it on the first straight-line part of the run. 
+
+   - You may need to format your data first. For the Kalman Filter to work, you'll need all input arrays to be of equal length. That means that you might have to interpolate data if for example you have fewer ToF measurements than you have motor input updates. Numpy's linspace and interp commands can help you accomplish this. 
+   - You may need to adjust your process noise and sensor noise covarience matrices according to what you see in your data.   
+
+### 3. Implement the Kalman Filter on the Robot
+
+Integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected.
 
 The following code snippets gives helpful hints on how to do matrix operations on the robot:
 
