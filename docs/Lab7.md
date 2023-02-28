@@ -87,8 +87,6 @@ To adjust Kalman Filter to work for your system, you will need to estimate the t
   3. Show graphs for the TOF sensor output, the (computed) speed, and the motor input. Please ensure that the x-axis is in seconds.
   4. Measure both the steady state speed and the 90% rise time and compute the A and B matrix.
 
----
-
 ### 2. Sanity Check Your Kalman Filter with Your Own Data
 
 Next, update the parameters for the Kalman Filter in the Jupyter notebook you created in the pre-lab with your measured values, and ensure that it works by running it on your own pre-recorded data from Lab 6. If you did orientiation control, feel free to only run it on the first straight-line part of the run. 
@@ -117,7 +115,6 @@ Sigma_p = Ad*Sigma*~Ad + Sigma_u; //Example of how to compute Sigma_p (~Ad equal
 
 If you want to get a head start on Lab 8, try speeding up your robot using your new KF to increase the execution time of your control loop. 
 
----
 ### Additional tasks for 5000-level students
 
 You're off the hook in this lab.
