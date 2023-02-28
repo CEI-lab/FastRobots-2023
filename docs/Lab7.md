@@ -36,7 +36,7 @@ Before you show up to lab, try implementing a Kalman Filter in your Jupyter Note
 
 ```cpp
 sig_u=np.array([[sigma_1**2,0],[0,sigma_2**2]]) //We assume uncorrelated noise, and therefore a diagonal matrix works.
-sig_z=np.array([[sigma_4**2]])
+sig_z=np.array([[sigma_3**2]])
 ```
 
 3. Identify your C matrix. Recall that C is a m x n matrix, where n are the dimensions in your state space, and m are the number of states you actually measure.
