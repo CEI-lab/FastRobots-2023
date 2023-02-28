@@ -7,7 +7,7 @@
 
 ## Objective
 
-The objective of Lab 7 is to implement a Kalman Filter, which will help you execute the behavior you did in [Lab 6](Lab6.md) fast. The goal now is to use the Kalman Filter to supplement the relatively slow ToF values, such that you can speed towards the wall as fast as possible, then either stop 1foot from the wall (if you chose Task A) or turn within 2ft of the wall (if you chose Task B). 
+The objective of Lab 7 is to implement a Kalman Filter, which will help you execute the behavior you did in [Lab 6](Lab6.md) fast. The goal now is to use the Kalman Filter to supplement your slowly sampled ToF values, such that you can speed towards the wall as fast as possible, then either stop 1foot from the wall (if you chose Task A) or turn within 2ft of the wall (if you chose Task B). 
 
 ## Parts Required
 
