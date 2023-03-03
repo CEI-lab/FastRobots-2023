@@ -7,7 +7,6 @@
 
 * [Adetunji, Rotimi](https://mimirotimi.github.io/#rotimi-adetunji)
 * [Alade, Tobi](https://abioticfactor.github.io/fast-robots/)
-* [Barsz, Rochelle](https://rochelleb1.github.io/FastRobotsSP23/)
 * [Bejoy, Bhadra](https://bhadrab.github.io/ECE4160/)
 * [Buchanan, Will](https://will-db.github.io/ece4960-fast-robots/)
 * [Cao, Yuqian](https://yc2443.github.io/ECE5160/)
@@ -29,9 +28,11 @@
 * [Kannan, Sarika](https://sarika2446.github.io/ece4160/)
 * [Kansara, Rishi](https://rkansara1.github.io/)
 * [Kwon, Jueun](https://jueunkwon.github.io/)
+* Li, Max
 * [Li, Tiantian](https://tiantianll.github.io/fast-robots/)
 * [Li, Wenxin](https://leewx1020.github.io/)
 * [Liu, Zhihui](https://zhihui-l.github.io/ECE5160/)
+* Lou, Allison
 * [Lu, Larry](https://roo-key.github.io/ece4160/)
 * [Manninen, Benjamin](https://pages.github.coecis.cornell.edu/bm586/ece4960/)
 * [Mitchell, Gabe](https://gabemitchell23.github.io/gfm48FastRobots/)
@@ -39,10 +40,11 @@
 * [Prieto, Julian](https://julian-prieto67.github.io/Fast-Robots/)
 * [Romo, Ignacio](https://pages.github.coecis.cornell.edu/ir93/fast-robots/)
 * [Sangani, Eshita](http://eshitasangani.github.io)
-* [Sokolova, Mariya]
+* Sokolova, Mariya
 * [Speckhals, Emily](https://speckhalse.github.io/ECE4160/)
 * [Tao, Zhongqi](https://zt88.github.io/Fast-Robots/)
 * [Tun, Zin](https://zinyamintun.github.io/zyt2-lab.github.io-FastRobots-2023-/)
+* Wang, Jinxuan
 * [Wang, Zechen](https://zechenwang00.github.io/ECE-5160-Sp23/)
 * [Wu, Michael](https://svorpal.github.io/fast_robot_website/)
 * [Xu, Boxin](https://dawnxuboxin.github.io/FastRobots-2023/)
