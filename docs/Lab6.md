@@ -8,7 +8,7 @@
 The purpose of this lab is to get experience with PID control. The lab is fairly open ended, you can pick whatever controller works best for your system. 4000-level students can choose between P, PI, PID, PD; 5000-level students can choose between PI and PID controllers. Your hand-in will be judged upon your demonstrated understanding of PID control and practical implementation constraints, and the quality of your solution. 
 
 This lab is part of a series of labs (6-8) on PID control, sensor fusion, and stunts. 
-This week you can choose to do either position control or orientation control. The former is easier and a good choice if you a very strained for time. The latter is a little harder, but will be of direct use in future labs (it is also more fun!). Whatever you choose, spend this week getting the basic behavior working. While we give you tips for improving/speeding up your controller in this lab, if you run out of time, you can optimize more over the coming weeks. 
+This week you can choose to do either position control or orientation control. The former is easier and a good choice if you are very strained for time. The latter is a little harder, but will be of direct use in future labs (it is also more fun!). Whatever you choose, spend this week getting the basic behavior working. While we give you tips for improving/speeding up your controller in this lab, if you run out of time, you can optimize more over the coming weeks. 
 
 ## Parts Required
 * 1 x [R/C stunt car](https://force1rc.com/products/cyclone-remote-control-car-for-kids-adults)
