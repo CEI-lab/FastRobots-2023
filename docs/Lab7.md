@@ -68,7 +68,7 @@ def kf(mu,sigma,u,y):
 
     y_m = y-C.dot(mu_p)
     mu = mu_p + kkf_gain.dot(y_m)    
-    sigma=(np.eye(3)-kkf_gain.dot(C)).dot(sigma_p)
+    sigma=(np.eye(2)-kkf_gain.dot(C)).dot(sigma_p)
 
     return mu,sigma
 ```
@@ -101,16 +101,15 @@ Integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before 
 The following code snippets gives helpful hints on how to do matrix operations on the robot:
 
 ```cpp
-#include <BasicLinearAlgebra.h>  //Use this library to work with matrices:
-using namespace BLA;             //This allows you to declare a matrix
+#include <BasicLinearAlgebra.h>    //Use this library to work with matrices:
+using namespace BLA;               //This allows you to declare a matrix
 
-Matrix<3,1> state = {0,0,0};     //Declares and initializes a 3x1 matrix 
-Matrix<1> u;                     //Basically a float that plays nice with the matrix operators
-Matrix<3,3> A = {1, 1, 0,
-                 0, 1, 1,
-                 0, 0, 1};       //Declares and initializes a 3x3 matrix
-state(1,0) = 1;                  //Writes only location 1 in the 3x1 matrix.
-Sigma_p = Ad*Sigma*~Ad + Sigma_u; //Example of how to compute Sigma_p (~Ad equals Ad transposed) 
+Matrix<2,1> state = {0,0};         //Declares and initializes a 2x1 matrix 
+Matrix<1> u;                       //Basically a float that plays nice with the matrix operators
+Matrix<2,2> A = {1, 1,
+                 0, 1};            //Declares and initializes a 2x2 matrix
+state(1,0) = 1;                    //Writes only location 1 in the 2x1 matrix.
+Sigma_p = Ad*Sigma*~Ad + Sigma_u;  //Example of how to compute Sigma_p (~Ad equals Ad transposed) 
 ```
 
 If you want to get a head start on Lab 8, try speeding up your robot using your new KF to increase the execution time of your control loop. 
