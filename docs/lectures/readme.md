@@ -15,6 +15,8 @@ Lecture slides will be uploaded on this page. Recorded lectures are available vi
 * [Lecture 9 - Linear systems, recap](./FastRobots-9-LinearSystems.pdf)
 * [Lecture 10 - Controllability](./FastRobots-10-Controllability.pdf)
 * [Lecture 11 - Controllability/LQR](.FastRobots-11-Controllability(continued).pdf)
+* [Lecture 12 - Probability and Bayes Theorem](./FastRobots-12-Probability_BayesTheorem.pdf)
+* 
 * 
 
 ' This code was uploaded at a random point during an interactive lecture, feel free to check it out, but use with caution!
