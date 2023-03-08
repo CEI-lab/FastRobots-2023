@@ -31,10 +31,10 @@ Before you show up to lab, try implementing a Kalman Filter in your Jupyter Note
 
 2. Compute the discrete form of your dynamics matrix, A, and your input matrix, B. Since you will be running your Kalman Filter on old data, use the corresponding sampling time.
 
-```cpp
-Ad = np.eye(n) + Delta_T * A  //n is the dimension of your state space 
-Bd = Delta_t * B
-```
+   ```cpp
+   Ad = np.eye(n) + Delta_T * A  //n is the dimension of your state space 
+   Bd = Delta_t * B
+   ```
 
 3. Identify your C matrix. Recall that C is a m x n matrix, where n are the dimensions in your state space, and m are the number of states you actually measure.
    - This could look like C=np.array([[-1,0]]), because you measure the negative distance from the wall (state 0).
