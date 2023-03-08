@@ -46,10 +46,10 @@ Bd = Delta_t * B
    - Recall that their relative values determine how much you trust your model versus your sensor measurements. If the values are set too small, the Kalman Filter will not work, if the values are too big, it will barely respond.
    - Recall that the covariance matrices take the approximate following form, depending on the dimension of your system state space and the sensor inputs.
 
-```cpp
-sig_u=np.array([[sigma_1**2,0],[0,sigma_2**2]]) //We assume uncorrelated noise, and therefore a diagonal matrix works.
-sig_z=np.array([[sigma_3**2]])
-```
+   ```cpp
+   sig_u=np.array([[sigma_1**2,0],[0,sigma_2**2]]) //We assume uncorrelated noise, and therefore a diagonal matrix works.
+   sig_z=np.array([[sigma_3**2]])
+   ```
 
 6. Finally, implement your Kalman Filter using the function in the code below (for ease, variable names follow the convention from the [lecture slides](TBD)). 
    - Loop through all of the data from the pre-recorded trial, while calling this function.
