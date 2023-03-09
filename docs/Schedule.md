@@ -15,7 +15,7 @@ All deadlines are specified on Canvas.
 | 5  (TR) | Linearizing, controllability                                         | [Lab 5, Motor driver and open loop control](Lab5.md)                            |
 | 6  ( R) | Observability/LQG/KF                                                 | No lab                                                                          |
 | 7  (TR) | Map representations, Graph search                                    | [Lab 6, PID speed control](Lab6.md)                                             |
-| 8  (TR) | Path planning, PRM, RRT                                              | Lab 7, Kalman Filters (sensor fusion)                                           |
+| 8  (TR) | Path planning, PRM, RRT                                              | [Lab 7, Kalman Filters (sensor fusion)](Lab7.md)                                |
 | 9  (TR) | Probability, Bayes theorem, Markov models                            | Lab 8, Stunts                                                                   |
 | 10 (TR) | Bayes filter                                                         | Lab 8, continued                                                                |
 | 11 (  ) | Spring break                                                         | No lab                                                                          |
