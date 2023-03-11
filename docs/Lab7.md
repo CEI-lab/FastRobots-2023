@@ -59,7 +59,7 @@ To build the state space model for your system, you will need to estimate the dr
 
 ### 3. Implement and test your Kalman Filter in Jupyter
 
-1. To sanity check your parameters, implement your Kalman Filter in Jupyter first. You can do this using the function in the code below (for ease, variable names follow the convention from the [lecture slides](TBD)). 
+1. To sanity check your parameters, implement your Kalman Filter in Jupyter first. You can do this using the function in the code below (for ease, variable names follow the convention from the [lecture slides](/lectures/FastRobots-13-KF.pdf)). 
    - Import timing, ToF, and PWM data from a straight run towards the wall (you should have this data handy from lab 6).  
    - You may need to format your data first. For the Kalman Filter to work, you'll need all input arrays to be of equal length. That means that you might have to interpolate data if for example you have fewer ToF measurements than you have motor input updates. Numpy's linspace and interp commands can help you accomplish this. 
    - Loop through all of the data, while calling the Kalman Filter.
