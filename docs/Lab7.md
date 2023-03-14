@@ -116,7 +116,9 @@ state(1,0) = 1;                    //Writes only location 1 in the 2x1 matrix.
 Sigma_p = Ad*Sigma*~Ad + Sigma_u;  //Example of how to compute Sigma_p (~Ad equals Ad transposed) 
 ```
 
-If you want to get a head start on Lab 8, try speeding up your robot using your new KF to increase the execution time of your control loop. 
+### 5 Speed things up (optional)
+
+If you want to get a head start on Lab 8, try speeding up your robot using your new KF (or extrapolator) to increase the execution time of your control loop. 
 
 ### Additional tasks for 5000-level students
 
