@@ -84,9 +84,23 @@ def kf(mu,sigma,u,y):
     return mu,sigma
 ```
 
-### 4. Implement the Kalman Filter on the Robot
+---
 
-Integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
+**Note that due to the snow day, we have decided to make edits to the lab from this point forward. If you are low on time, consider doing task 4.A; if you are all caught up, consider doing 4.B instead for up to 5 bonus points.**
+
+---
+
+### 4.A Extrapolation
+
+Now that you understand how the Kalman Filter works, you could implement this on your robot and use it to speed up sampling of the estimated distance-to-the-wall (Task 4.B). However, getting the Kalman Filter to work in practice takes time. If you are low on time, do extrapolation instead. 
+
+Write a function to extrapolate based on recent ToF sensor values, such that you can drive your robot quickly towards the wall and initiate your stunt at just the right time. While your solution in this lab does not have to be fast, part of your lab 8 grade will be based on the speed of your solution relative to your class mates. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
+
+### 4.B Implement the Kalman Filter on the Robot (Optional, for up to 5 bonus points!)
+
+(Original task)
+
+If you have time, integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
 
 The following code snippets gives helpful hints on how to do matrix operations on the robot:
 
