@@ -28,12 +28,12 @@
 * [Kannan, Sarika](https://sarika2446.github.io/ece4160/)
 * [Kansara, Rishi](https://rkansara1.github.io/)
 * [Kwon, Jueun](https://jueunkwon.github.io/)
-* Li, Max
+* [Li, Max](http://www.maxdanli.com/Fast-Robots-Lab-Journal/)
 * [Li, Tiantian](https://tiantianll.github.io/fast-robots/)
 * [Li, Wenxin](https://leewx1020.github.io/)
 * Lou, Allison
 * [Lu, Larry](https://roo-key.github.io/ece4160/)
-* [Manninen, Benjamin](https://pages.github.coecis.cornell.edu/bm586/ece4960/)
+* [Manninen, Benjamin](https://pages.github.coecis.cornell.edu/bm586/ece4160/)
 * [Mitchell, Gabe](https://gabemitchell23.github.io/gfm48FastRobots/)
 * [Park, Addy](https://apark2459.github.io/)
 * [Prieto, Julian](https://julian-prieto67.github.io/Fast-Robots/)
@@ -42,7 +42,7 @@
 * [Sokolova, Mariya](https://sockie3.github.io/)
 * [Tao, Zhongqi](https://zt88.github.io/Fast-Robots/)
 * [Tun, Zin](https://zinyamintun.github.io/zyt2-lab.github.io-FastRobots-2023-/)
-* Wang, Jinxuan
+* [Wang, Jinxuan](http://riaaawang.github.io)
 * [Wang, Zechen](https://zechenwang00.github.io/ECE-5160-Sp23/)
 * [Wu, Michael](https://svorpal.github.io/fast_robot_website/)
 * [Xu, Boxin](https://dawnxuboxin.github.io/FastRobots-2023/)
