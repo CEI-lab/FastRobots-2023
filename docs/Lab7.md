@@ -86,7 +86,7 @@ def kf(mu,sigma,u,y):
 
 ---
 
-**Note that due to the snow day, we have decided to make edits to the lab from this point forward. If you are low on time, consider doing task 4.A; if you are all caught up, consider doing 4.B instead for up to 5 bonus points.**
+**Note that due to the snow day, we have decided to make edits to the lab from this point forward. If you are low on time, consider doing task 4.A; if you are all caught up, consider doing 4.B instead for up to 4 bonus points.**
 
 ---
 
@@ -96,7 +96,7 @@ Now that you understand how the Kalman Filter works, you could implement this on
 
 Write a function to extrapolate based on recent ToF sensor values, such that you can drive your robot quickly towards the wall and initiate your stunt at just the right time. While your solution in this lab does not have to be fast, part of your lab 8 grade will be based on the speed of your solution relative to your class mates. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
 
-### 4.B Implement the Kalman Filter on the Robot (Optional, for up to 5 bonus points!)
+### 4.B Implement the Kalman Filter on the Robot (Optional, for up to 4 bonus points!)
 
 (Original task)
 
