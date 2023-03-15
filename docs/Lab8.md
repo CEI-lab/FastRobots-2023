@@ -5,8 +5,8 @@
 # Lab 8 Stunts!
 
 ## Objective
-The purpose of this lab is to combine everything you've done up till now, and especially [labs 6](Lab6.md) and [7](Lab7.md), to do fast stunts. _This_ is the reason you labored all those long hours in the lab carefully soldering up and mounting your components!
-Your grade will be based partially on the design and partially on how fast your robot manages to complete the stunt (relative to everyone else in class). We will also have everyone vote on the best blooper video - the award will be two bonus points.   
+The purpose of this lab is to combine everything you've done up till now to do fast stunts. _This_ is the reason you labored all those long hours in the lab carefully soldering up and mounting your components!
+Your grade will be based partially on your hardware/software design and partially on how fast your robot manages to complete the stunt (relative to everyone else in class). We will also have everyone vote on the coolest stunt and the best blooper video - the top picks will receive up to 2 bonus points.   
 
 ## Parts Required
 
@@ -23,42 +23,30 @@ Your grade will be based partially on the design and partially on how fast your 
 
 ### Controlled Stunts
 
-All of these stunts must be performed on the tracks setup in the lab (or hallway outside of the lab). We have set up crash pads which should help prevent excessive damage when vehicles go rogue. We will need video evidence that your stunt works three times in a row, and graphs showing the sensor data, KF output (if applicable), and motor values with time stamps. Feel free to upload blooper videos!
+All of these stunts must be performed on the tracks setup in the lab (or hallway outside of the lab). We have set up crash pads which should help prevent excessive damage when vehicles go rogue. We will need video evidence that your stunt works at least three times, and graphs showing the sensor data, KF output (if applicable), and motor values with time stamps. 
 
 #### Task A: Position Control
 
 Your robot must start at the designated line (<4m from the wall), drive fast forward, and upon reaching the sticky matt with a center located 0.5m from the wall, perform a flip, and drive back in the direction from which it came. 
-   - Your stunt will be considered successful if you manage to do a flip. The score will depend on how quickly (if at all) you make it back past the initial starting line. If your robot runs off at an angle without re-crossing the starting line this is a failed run. 
-   - Note that if you don't feel comfortable tuning your PID controller from Lab 6 to work at high speeds, you are welcome to do a bang-bang control (i.e. simply drive fast at a fixed speed towards the wall, and flip when needed). 
+   - Your stunt will be considered successful if your robot manages to do a flip. The score will depend on how quickly (if at all) you make it back past the initial starting line. If your robot runs off at an angle without re-crossing the starting line this is a failed run. 
+   - Disengage your PID position control, and give the robot a set, fast speed (to do your flip, you need the robot to go fast, therefore it should not be slowing down as it would if it was doing PID control on the position). If you want to go above and beyond and create a very robust solution, consider doing PID control on the speed of the robot instead of the position (this is optional).  
    - The TOF sensors are not all calibrated equally well; manually tuning the distance to the wall for which your robot initiates the flip is fine.
-   - The Kalman Filter is what will help you estimate the distance to the wall, in spite of the slow sensor readings. When you have new sensor readings, run both the prediction and the update step. When you don't have new sensor readings, run only the prediction step (i.e. compute your estimated distance based only on the motor inputs and your dynamics model). Remember to adjust your discrete A and B matrices to the new sample rate and your input to the new PWM values.  
-   - If you never got the Kalman Filter working well, you can try doing this lab either by extrapolating TOF data forward, or simply guestimating a good distance value at which to estimate your turn. 
+   - If you are using the Kalman Filter to estimate the distance to the wall quickly, do the following. When you have new sensor readings, run both the prediction and the update step. When you don't have new sensor readings, run only the prediction step (i.e. compute your estimated distance based only on the motor inputs and your dynamics model). Remember to adjust your discrete A and B matrices to the new sample rate and your input to the new PWM values.  
 
 [![Lab 8, Task A](https://img.youtube.com/vi/cffupvOlyUM/1.jpg)](https://youtu.be/cffupvOlyUM "Lab 8, Task A")
 
 
 #### Task B: Orientation Control
 
-Your robot must start at the designated line (<4m from the wall), drive fast forward, and initiate a 180 degree turn with drift such that before it starts driving backward, it reaches a distance 0.6m from the wall (marked by a line on the floor). 
-   - Your stunt will be considered successful if you manage to touch the line and make it back past the initial starting point. The score will depend on how quickly you make it back.
+Your robot must start at the designated line (<4m from the wall), drive fast forward, and when the robot is within 3ft (914mm = 3 floor tiles in the lab) from the wall, initiate a 180 degree turn. 
    - The TOF sensors are not all calibrated equally well; manually tuning the distance to the wall for which your robot initiates the turn is fine.
-   - The Kalman Filter is what will help you estimate the distance to the wall, in spite of the slow sensor readings. When you have new sensor readings, run both the prediction and the update step. When you don't have new sensor readings, run only the prediction step (i.e. update your estimated distance based only on the motor inputs and your dynamics model). Remember to adjust your discrete A and B matrices to the new sample rate and your input to the new PWM values.  
-   - If you never got the Kalman Filter working well, you can try doing this lab either by extrapolating TOF data forward, or simply guestimating a good distance value at which to estimate your turn. 
+   - If you are using the Kalman Filter to estimate the distance to the wall quickly, do the following. When you have new sensor readings, run both the prediction and the update step. When you don't have new sensor readings, run only the prediction step (i.e. compute your estimated distance based only on the motor inputs and your dynamics model). Remember to adjust your discrete A and B matrices to the new sample rate and your input to the new PWM values.  
   
 [![Lab 8, Task B](https://img.youtube.com/vi/d2JvpHIE_Pg/1.jpg)](https://youtu.be/d2JvpHIE_Pg "Lab 8, Task B")
 
-#### Task C: Thread the Needle!
+### Extra credit for coolest stunt and best bloopers!
 
-Omitted since, sadly, noone took on this task.
-
-### Open Loop, Repeatable Stunts
-
-Come up with your own exciting stunt! The only requirement is that you have video evidence for it being repeatable (3 times!) and that you share the control sequence on your page. 
-This will count for up to 3 out of 10 credits in the lab. Every student and TA in class will be given 10 votes to distribute among their peers, and credits will be assigned proportional to the number of votes you receive. 
-
-### Extra credit for bloopers!
-
-During the voting process, everyone will be given one extra vote to give to the best blooper video. The three highest scores will be given 1 extra credit!
+Everyone, including your teaching team, will be the chance to vote for the coolest stunt video and the best blooper. We will send you a link to vote after Spring break. The highest scores will be given up to 2 extra credits!
 
 ---
 
