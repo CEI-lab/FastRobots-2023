@@ -16,7 +16,7 @@ All deadlines are specified on Canvas.
 | 6  ( R) | Observability/LQG/KF                                                 | No lab                                                                          |
 | 7  (TR) | Map representations, Graph search                                    | [Lab 6, PID speed control](Lab6.md)                                             |
 | 8  (TR) | Path planning, PRM, RRT                                              | [Lab 7, Kalman Filters (sensor fusion)](Lab7.md)                                |
-| 9  (TR) | Probability, Bayes theorem, Markov models                            | Lab 8, Stunts                                                                   |
+| 9  (TR) | Probability, Bayes theorem, Markov models                            | [Lab 8, Stunts](Lab8.md)                                                        |
 | 10 (TR) | Bayes filter                                                         | Lab 8, continued                                                                |
 | 11 (  ) | Spring break                                                         | No lab                                                                          |
 | 12 (TR) | In-class setup of the simulator, Motion models, Sensor models        | Lab 9, Mapping (real)                                                           |
