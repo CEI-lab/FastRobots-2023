@@ -31,7 +31,7 @@
 * [Li, Max](http://www.maxdanli.com/Fast-Robots-Lab-Journal/)
 * [Li, Tiantian](https://tiantianll.github.io/fast-robots/)
 * [Li, Wenxin](https://leewx1020.github.io/)
-* Lou, Allison
+* [Lou, Allison](https://allisonlou.github.io/)
 * [Lu, Larry](https://roo-key.github.io/ece4160/)
 * [Manninen, Benjamin](https://pages.github.coecis.cornell.edu/bm586/ece4160/)
 * [Mitchell, Gabe](https://gabemitchell23.github.io/gfm48FastRobots/)
