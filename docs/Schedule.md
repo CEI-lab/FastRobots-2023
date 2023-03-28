@@ -19,7 +19,7 @@ All deadlines are specified on Canvas.
 | 9  (TR) | Probability, Bayes theorem, Markov models                            | [Lab 8, Stunts](Lab8.md)                                                        |
 | 10 (TR) | Bayes filter                                                         | [Lab 8, continued](Lab8.md)                                                     |
 | 11 (  ) | Spring break                                                         | No lab                                                                          |
-| 12 (TR) | In-class setup of the simulator, Motion models, Sensor models        | Lab 9, Mapping (real)                                                           |
+| 12 (TR) | In-class setup of the simulator, Motion models, Sensor models        | [Lab 9, Mapping (real)]                                                         |
 | 13 (TR) | Ethics                                                               | Lab 10, Localization (sim)                                                      |
 | 14 (TR) | Guest lectures (TBD)                                                 | Lab 11, Localization (real)](Lab11.md)                                         |
 | 15 (TR) | Guest lectures (TBD and Trivia)                                      | Lab 12, Planning and execution (real)                                          |
