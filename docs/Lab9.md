@@ -20,7 +20,7 @@ Consider checking out [lecture 2 on transformation matrices](./lectures/FastRobo
 
 ### Control
 
-You can complete your control in either one of the following ways:
+You can complete your control in either one of the following ways. If your control is based on orientiation aim for at least 14 readings (roughly 25 degree increments) per 360 degree rotation; if your control is based on angular speed aim for a maximum of 25 degrees per second, as this will allow you to do 14 sensor readings spaced out by approximately 1s. Both these metrics may prove to be too hard given your particular robot; lower resolution is okay, as long as your map comes out reasonable.
 
 1. _Open loop control:_ Program your robot to spin around its own axis as slowly as possible while recording ToF readings, OR program it to rotate in small increments interspersed with brief stops to record ToF readings. Recall that the ToF sensor will report false outputs if the distance to the object changes too drastically during a reading -- a stationary robot can guarantee that the ToF sensor is pointing towards a fixed point in space. 
    - This is by far the easiest type of control and if you are very pressed for time this is a good option. 
@@ -29,15 +29,13 @@ You can complete your control in either one of the following ways:
    - You can maximally score 5 points in this lab if you decide to do open loop control. 
 
 2. _Orientation control:_ Create a PID controller that allows your robot to do on-axis turns in small, accurate increments. 
-   - Aim for at least 14 readings (roughly 25 degree increments) per 360 degree rotation. 
    - If you completed Task B Orientation Control in [lab 6](Lab6.md) this is likely the easiest solution. 
    - This option may also be best if you cannot get your robot to do slow reliable turns. Recall that the ToF sensor will report false outputs if the distance to the object changes too drastically during a reading -- a stationary robot can guarantee that the ToF sensor is pointing towards a fixed point in space.
    - Please quantify and/or use graphs to document that your PID controller works well, and upload a video that shows if your robot turns (roughly) on axis. 
    - Given the drift in your sensor, the size and accuracy of your increments, and how reliably your robot turns on axis, reason about the average and maximum error of your map if you were to do an on-axis turn in the middle of a 4x4m square, empty room. 
    - If you choose this option, you can score up to 7.5 points in this lab.
 
-3. _Angular speed control:_ Create a PID controller that works directly on the raw gyroscope values. This is beneficial over orientation control, because you avoid accumulating errors during integration. 
-   - Try to aim for a maximum of 25 degrees per second, as this will allow you to do 14 sensor readings spaced out by approximately 1s. (This may be too hard given your particular robot; a higher angular speed is fine, as long as your map comes out reasonable). 
+3. _Angular speed control:_ Create a PID controller that works directly on the raw gyroscope values. This is beneficial over orientation control, because you avoid accumulating errors during integration.  
    - You will likely need to low pass filter the gyroscope values - read up on how we did that with a complementary LPF in [Lecture 4, slide 23](/lectures/FastRobots-4-IMU.pdf). 
    - You can also consider adjusting the integration time of the TOF sensor, using `proximitySensor.setProxIntegrationTime(4); //A value of 1 to 8 is valid`. Note that this function is only available in the [Tof Pololu library](https://github.com/pololu/vl53l0x-arduino).  
    - One way to make the robot spin even slower is to block one set of wheels while turning the others. This means that your robot is now driving in a slight circle (rather than on-axis), which will make post-processing of data slightly more difficult, but allow you to capture data more reliably.
