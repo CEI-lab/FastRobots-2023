@@ -37,8 +37,13 @@ You will be programming the controller in Python to perform various functions on
 
 
 ## Computer Setup
+### WSL
+WSL users should continue to use WSL (for Bluetooth reliability) and should follow the
+Linux instructions when applicable. The provided WSL distribution comes with Python 3.9
+and works without upgrading to a later Python version.
+
 ### Upgrade Python
-This is a reminder to upgrade python (>= 3.10) and pip (>= 21.0).
+This is a reminder to upgrade python (>= 3.9) and pip (>= 21.0).
 > NOTE: You may notice different versions when using `python` and `python3` commands; use the one that has the latest version and use pip in that version of python. For example, if `python3` has the latest version of python on your computer, use pip as `python3 -m pip`. Make sure you use the right python command for all the steps detailed in this documentation.
 
 <details>
@@ -48,7 +53,7 @@ This is a reminder to upgrade python (>= 3.10) and pip (>= 21.0).
 </details><br>
 
 <ol>
-  <li>Install/Upgrade <a href="https://www.python.org/downloads/">Python 3.10</a></li>
+  <li>Install/Upgrade <a href="https://www.python.org/downloads/">Python 3.9</a></li>
   <li>Install/Upgrade <a href="https://pip.pypa.io/en/stable/installation/#upgrading-pip">pip</a></li>
 </ol>
 
@@ -59,22 +64,26 @@ If you just upgraded your python version and used an older version in Lab2, then
 1. Activate your virtual environment.
 2. Install dependencies
   ```bash
-  python -m pip install numpy pygame pyqt5 pyqtgraph pyyaml ipywidgets colorama
+  python -m pip install numpy pygame pyqt6 pyqtgraph pyyaml ipywidgets colorama
   ```
   > Replace `python` with `python3` if `python3` points to the latest version.
 
 ### Install Box2D package
 #### Installing from a pip wheel
 1. Activate your virtual environment.
-2. Download the [pip wheels](https://cornell.box.com/s/3ihhcv6efjfhdkkmtwn0qktj1zd1pxc7) and extract it into a known location.
-  > md5sum: 7af561f39f78c5b29b5bd2699aaebd96
+2. Download the [pip wheel](https://github.com/CEI-lab/ECE4960-sim-release/releases/tag/v2_3_10) that matches your OS and Python version. For example, MacOS with
+Python 3.9 would download the wheel with ```cp39-macosx```
+in the filename. Remember that WSL uses Linux instructions.
+
 3. Install <b>Box2D</b> from pip
-  > Replace &lt;wheel_directory&gt; with the path of the wheel directory.
-  > For example in Linux, if the package was extracted to /home/bender/course_work. 
-  > Then in the below command, replace &lt;wheel_directory&gt; with /home/bender/course_work/box2d_wheels.
+  > Replace &lt;wheel file&gt; with the path to the
+  wheel that you downloaded
   ```bash
-  pip install --find-links <wheel_directory> box2d
+  pip install <wheel file>
   ```
+  Remember that WSL can access your Windows ```C:\``` drive
+  as ```/mnt/c```.
+  
 4. If Box2D is installed successfully, start a python interpreter:
   ```bash
   python
