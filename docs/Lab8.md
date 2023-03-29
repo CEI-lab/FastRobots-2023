@@ -23,7 +23,7 @@ Your grade will be based partially on your hardware/software design and partiall
 
 ### Controlled Stunts
 
-All of these stunts must be performed on the tracks setup in the lab (or hallway outside of the lab). We have set up crash pads which should help prevent excessive damage when vehicles go rogue. We will need video evidence that your stunt works at least three times, and graphs showing the sensor data, KF output (if applicable), and motor values with time stamps. 
+Pick one of the following tasks, according to what you picked in lab 6. All of the related stunts must be performed on the tracks setup in the lab (or hallway outside of the lab). We have set up crash pads which should help prevent excessive damage when vehicles go rogue. We will need video evidence that your stunt works at least three times, and graphs showing the sensor data, KF output (if applicable), and motor values with time stamps. 
 
 #### Task A: Position Control
 
