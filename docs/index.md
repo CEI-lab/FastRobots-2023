@@ -35,3 +35,5 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 * [Grading and extension policies](./Grading.md)
 * [Health considerations](./Health.md)
 * [Ethical code of conduct](./CoC.md)
+
+**DISCLAIMER: This website uses cookies (Google Analytics) to track page views, outbound clicks and file downloads.**
