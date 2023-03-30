@@ -71,7 +71,7 @@ If you just upgraded your Python version and used an older version in Lab2, then
 ### Install Box2D package
 #### Installing from a pip wheel
 1. Activate your virtual environment.
-2. Download the [pip wheel](https://github.com/CEI-lab/ECE4960-sim-release/releases/tag/v2_3_10) that matches your OS and Python version. For example, MacOS with
+2. Download the [pip wheel](https://github.com/CEI-lab/FastRobots-sim-release/releases/tag/v2_3_10) that matches your OS and Python version. For example, MacOS with
 Python 3.9 would download the wheel with ```cp39-macosx```
 in the filename. Remember that WSL uses Linux instructions.
 
@@ -152,8 +152,8 @@ python setup.py install</code></pre></div></div>
 </div>
 
 ## Instructions
-1. Download and extract the [simulation base code](https://github.com/CEI-lab/ECE4960-sim-release) into your project folder.
-2. Download the notebook from [here](https://github.com/CEI-lab/ECE4960-lab10) and copy *lab10.ipynb* into the **notebooks** directory (inside the simulation base code directory).
+1. Download and extract the [simulation base code](https://github.com/CEI-lab/FastRobots-sim-release) into your project folder.
+2. Download the notebook from [here](https://github.com/CEI-lab/FastRobots-JupyterSim) and copy the .ipynb file into the **notebooks** directory (inside the simulation base code directory).
 3. Follow the instructions in the notebook to understand how to control your virtual robot and use the plotter.
 
 ## Tasks (We will do these as an in-class exercise)
