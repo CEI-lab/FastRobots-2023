@@ -58,7 +58,7 @@ This is a reminder to upgrade python (>= 3.9) and pip (>= 21.0).
 </ol>
 
 #### Install Python Dependencies
-If you just upgraded your python version and used an older version in Lab2, then the virtual environment created in Lab 2 will no longer be compatible. Inside your project folder, delete the directory with the name of your virtual environment (**ece4960_ble**). Verify it is actually deleted! Now, follow instructions in [Lab2](Lab2.md) to setup your new virtual environment and reinstall the packages from Lab 2.
+If you just upgraded your Python version and used an older version in Lab2, then the virtual environment created in Lab 2 will no longer be compatible. Inside your project folder, delete the directory with the name of your virtual environment (**FastRobots_ble**). Verify it is actually deleted! Now, follow instructions in [Lab2](Lab2.md) to setup your new virtual environment and reinstall the packages from Lab 2.
 
 ### Install pip packages
 1. Activate your virtual environment.
@@ -83,7 +83,7 @@ in the filename. Remember that WSL uses Linux instructions.
   ```
   Remember that WSL can access your Windows ```C:\``` drive
   as ```/mnt/c```.
-  
+
 4. If Box2D is installed successfully, start a python interpreter:
   ```bash
   python
