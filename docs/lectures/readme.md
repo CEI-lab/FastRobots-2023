@@ -22,6 +22,7 @@ Lecture slides will be uploaded on this page. Recorded lectures are available vi
 * [Lecture 16 - Markov and Bayes Filter I](./FastRobots-16-Markov_BayesFilter1.pdf)
 * [Lecture 17 - Motion models](./FastRobots-17-Motion_models.pdf)
 * [Lecture 18 - Sensor models](./FastRobots-18-SensorModel.pdf)
+* [Lecture 19 - Bayes Filter II](./FastRobots-19-Markov_BayesFilter2.pdf)
 * 
 
 ' This code was uploaded at a random point during an interactive lecture, feel free to check it out, but use with caution!
