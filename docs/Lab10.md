@@ -56,7 +56,7 @@ The prediction step increases uncertainty in the **belief** while the update ste
 ---
 
 ## Lab Procedure
-1. Download the lab11 notebook from [here](https://github.com/CEI-lab/FastRobots-2023/raw/main/docs/lab10.ipynb.zip) and copy *lab11.ipynb* into the **notebooks** directory (inside the simulation base code directory).
+1. Download the lab10 notebook from [here](https://github.com/CEI-lab/FastRobots-2023/raw/main/docs/lab10.ipynb.zip) and copy *lab10.ipynb* into the **notebooks** directory (inside the simulation base code directory).
 2. Follow the instructions in the notebook.
 
 > NOTE: Make sure you read the [Tips](Lab10.md#tips) section after you go over the notebook instructions.
