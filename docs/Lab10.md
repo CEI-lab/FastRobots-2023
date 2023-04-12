@@ -66,9 +66,7 @@ Perform Grid localization for the sample trajectory.
 - You may modify the trajectory for better results. 
 - Attach a video of the best localization results (along the entire trajectory). 
 
-### Tips
-
-#### Workflow Tips
+### Workflow Tips
 - At all times, make sure only ONE instance of the plotter and simulator is running. Avoid running multiple simulation notebooks concurrently.
 - If the plotter becomes sluggish over long operating times, restart it.
 - There is a small "A" button on the bottom left corner of the plotter tool that zooms the plot to fit in the window.
