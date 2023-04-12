@@ -7,7 +7,9 @@
 ## Objective
 The purpose of this lab is to implement grid localization using Bayes filter.
 
-## Background
+## Pre-lab
+
+Please familiarize yourself with the following background information before showing up to lab. 
 
 #### Robot Localization
 Robot localization is the process of determining where a mobile robot is located with respect to its environment. Plotting odometry against the ground truth in the previous lab should have convinced you that non-probabilistic methods lead to poor results.
@@ -51,20 +53,22 @@ Essentially, every iteration of the Bayes filter has two steps:
 
 The prediction step increases uncertainty in the **belief** while the update step reduces uncertainty. The belief calculated after the prediction step is often referred to as **prior belief**. Refer [lecture 17](lectures/FastRobots-17-Markov_BayesFilter1.pdf) and [lecture 18](lectures/FastRobots-18-BayesFilter1_Motion_models.pdf).
 
+---
+
 ## Lab Procedure
 1. Download the lab11 notebook from [here](https://github.com/CEI-lab/ECE4960-lab11) and copy *lab11.ipynb* into the **notebooks** directory (inside the simulation base code directory).
 2. Follow the instructions in the notebook.
 
 > NOTE: Make sure you read the [Tips](Lab11.md#tips) section after you go over the notebook instructions.
 
-## Tasks
+### Tasks
 Perform Grid localization for the sample trajectory. 
 - You may modify the trajectory for better results. 
 - Attach a video of the best localization results (along the entire trajectory). 
 
-## Tips
+### Tips
 
-### Workflow Tips
+#### Workflow Tips
 - At all times, make sure only ONE instance of the plotter and simulator is running. Avoid running multiple simulation notebooks concurrently.
 - If the plotter becomes sluggish over long operating times, restart it.
 - There is a small "A" button on the bottom left corner of the plotter tool that zooms the plot to fit in the window.
@@ -82,17 +86,17 @@ Use the python module **numpy** for Numpy operations such as basic slicing and i
 
 **NOTE:** Most of these functions use radians as the default unit.
 
-#### Gaussian Function
+##### Gaussian Function
 The **gaussian** function of class **BaseLocalization** can be used to model noise. It is advised to use Gaussians in the continuous world as it may be more involved to use Gaussians in a discretized world. Use the member functions **from_map** and **to_map** of class **Mapper** accordingly.
 
-#### Arithmetic Underflow
+##### Arithmetic Underflow
 When you multiply probabilities with each other (especially in the update step), the resulting value may suffer from [floating point underflow](https://en.wikipedia.org/wiki/Arithmetic_underflow). To prevent this from happening normalize the belief grid when necessary using the following code:
 ```
 loc.bel = loc.bel / np.sum(loc.bel)
 ```
 Think about how often you need to do this; every matrix operation takes time.
 
-#### Odometry Motion Model in the Prediction Step
+##### Odometry Motion Model in the Prediction Step
 In the odometry motion model, any control input `u` can be expressed as a tuple <span><img src="https://render.githubusercontent.com/render/math?math=u \equiv [rot1, trans, rot2]"></span>
 
 The `compute_control` function is expected to extract the control information in the above format given a previous pose (at time `t-1`) and a current pose (at time `t`) of the robot.
@@ -109,7 +113,7 @@ where, `gaussian` is a function defined in **localization.py**, `odom_rot_noise`
 
 All the quantities in the RHS (Right Hand Side) of the above equation is known, and thus you can calculate the transition probability <span><img src="https://render.githubusercontent.com/render/math?math=p({x}_{t}|{u}_{t},{x}_{t-1})"></span> which is the only unknown quantity in the prediction step of the Bayes Filter. Repeat this for every possible pair of previous and current poses (the first line of the Bayes Filter algorithm) to complete the prediction step.
 
-#### Sensor Model with multiple individual measurements
+##### Sensor Model with multiple individual measurements
 Each measurement <img src="https://render.githubusercontent.com/render/math?math=z_{t}"> consists of 18 different individual measurements <img src="https://render.githubusercontent.com/render/math?math=z^{1}_{t}, z^{2}_{t}, ...., z^{18}_{t}"> recorded at equidistant angular positions during the robot's (anti-clockwise) rotation behavior. The 18 true measurements values are recorded at the same equidistant angular positions for each grid cell (state) and is available through the **Mapper** class. Therefore, each index of the member variable array **obs_views** (of class **Mapper**) is the true individual measurement of the corresponding index of the member variable array **obs_range_data** (of class **BaseLocalization**). You do not need to use **obs_bearing_data** in your bayes filter implementation.
 
 You will need to find the likelihood of the 18 measurements given a state i.e.
@@ -118,14 +122,14 @@ You will need to find the likelihood of the 18 measurements given a state i.e.
 
 In the above equation, we assume that individual measurements are independent given the robot state. 
 
-#### Normalizing your angles
+##### Normalizing your angles
 The third dimension of the grid represents the orientation (yaw) in the range \[-180,+180\) degrees. When dealing with angles in your bayes filter (for example in calculating rotation1 and rotation2 in the odom motion model), you need to make sure the final angles are in the above range.
 
 Think about what happens when you use a Gaussian to model a rotation of 350 degrees where the true value is -10 degrees and standard deviation is 20 degrees. <img src="https://render.githubusercontent.com/render/math?math=\mathcal{N}(350|\mu=-10,\sigma=20)"> is highly unlikely though 350 degrees is equivalent to -10 degrees. 
 
 Use the function **normalize_angle** from class **Mapper** to normalize your angles when necessary.
 
-#### Computation Time
+##### Computation Time
 In each iteration of the bayes filter, you will need to go through all possible previous and current states in the grid to estimate the belief. Think about how many loops would be required to perform this.
 
 Given that your grid has 12×9×18 = 1944 possible states, there is lot of computation involved in each iteration of the bayes filter. Hence, you need to write efficient code, especially in Python, if you want your entire estimation process to run within a couple of minutes. Try to get the running time of the prediction step and the update step functions to be within a couple of seconds; shorter running times may prove beneficial for testing and debugging. Here are some ways to reduce processing time:
@@ -134,6 +138,8 @@ Given that your grid has 12×9×18 = 1944 possible states, there is lot of compu
    - Use Numpy for faster matrix operations instead of element wise operations. Numpy is faster if you can use matrix-like operations because the backend processing happens in C. 
       - **HINT**: The **gaussian** function of class BaseLocalization can handle Numpy variables; think about how to perform Numpy operations in the update step. You may not even need the **sensor_model** function if you perform grid indexing to directly compute the sensor noise model in the **update_step** function.
 
+---
+  
 ## Write-up
 To demonstrate that you've successfully completed the lab, please upload a brief lab report (<1.000 words), with code (not included in the word count), photos, and videos documenting that everything worked and what you did to make it happen. Include the most probable state after each iteration of the bayes filter along with its probability and compare it with the ground truth pose. Write down your inference of when it works and when it doesn't.
 
