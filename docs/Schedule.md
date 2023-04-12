@@ -20,7 +20,7 @@ All deadlines are specified on Canvas.
 | 10 (TR) | Bayes filter I, Motion models, sensor models                         | [Lab 8, continued](Lab8.md)                                                     |
 | 11 (  ) | Spring break                                                         | No lab                                                                          |
 | 12 (TR) | Bayes filter II, [In-class simulator setup](FastRobots-Sim.md)       | [Lab 9, Mapping (real)](Lab9.md)                                                |
-| 13 (TR) | SLAM, Ethics I                                                       | Lab 10, Localization (sim)                                                      |
+| 13 (TR) | SLAM, Ethics I                                                       | [Lab 10, Localization (sim)](Lab10.md)                                          |
 | 14 (TR) | Ethics II, Trivia                                                    | Lab 11, Localization (real)](Lab11.md)                                         |
 | 15 (TR) | Guest lectures (Eileen Behrendt, ASML, and Katie Bradford, Vecna)    | Lab 12, Planning and execution (real)                                          |
 | 16 (T)  | Final Showcase                                                       | Lab 12, Planning and execution (real)                                          |
