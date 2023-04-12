@@ -56,10 +56,10 @@ The prediction step increases uncertainty in the **belief** while the update ste
 ---
 
 ## Lab Procedure
-1. Download the lab11 notebook from [here](https://github.com/CEI-lab/ECE4960-lab11) and copy *lab11.ipynb* into the **notebooks** directory (inside the simulation base code directory).
+1. Download the lab11 notebook from [here](https://github.com/CEI-lab/FastRobots-2023/raw/main/docs/lab10.ipynb.zip) and copy *lab11.ipynb* into the **notebooks** directory (inside the simulation base code directory).
 2. Follow the instructions in the notebook.
 
-> NOTE: Make sure you read the [Tips](Lab11.md#tips) section after you go over the notebook instructions.
+> NOTE: Make sure you read the [Tips](Lab10.md#tips) section after you go over the notebook instructions.
 
 ### Tasks
 Perform Grid localization for the sample trajectory. 
