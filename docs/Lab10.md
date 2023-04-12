@@ -9,7 +9,7 @@ The purpose of this lab is to implement grid localization using Bayes filter.
 
 ## Pre-lab
 
-Please familiarize yourself with the following background information before showing up to lab. 
+Please read the following background information and the lab description in its entirety before showing up to lab hours.  
 
 #### Robot Localization
 Robot localization is the process of determining where a mobile robot is located with respect to its environment. Plotting odometry against the ground truth in the previous lab should have convinced you that non-probabilistic methods lead to poor results.
