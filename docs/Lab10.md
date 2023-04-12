@@ -139,6 +139,6 @@ Given that your grid has 12×9×18 = 1944 possible states, there is lot of compu
 ---
   
 ## Write-up
-To demonstrate that you've successfully completed the lab, please upload a brief lab report (<1.000 words), with code (not included in the word count), photos, and videos documenting that everything worked and what you did to make it happen. Include the most probable state after each iteration of the bayes filter along with its probability and compare it with the ground truth pose. Write down your inference of when it works and when it doesn't.
+To demonstrate that you've successfully completed the lab, please upload a brief lab report (<600 words), with code (not included in the word count), photos, and videos documenting that everything worked and what you did to make it happen. Include the most probable state after each iteration of the bayes filter along with its probability and compare it with the ground truth pose. Write down your inference of when it works and when it doesn't.
 
 Please use screen-recording tools to record any necessary media.
