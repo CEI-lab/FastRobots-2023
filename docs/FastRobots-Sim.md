@@ -42,6 +42,11 @@ WSL users should continue to use WSL (for Bluetooth reliability) and should foll
 Linux instructions when applicable. The provided WSL distribution comes with Python 3.9
 and works without upgrading to a later Python version.
 
+WSL users may have to install some packages in the WSL terminal.
+```
+sudo apt install libegl1 libxkbcommon-x11-0 libxcb-xinerama0 libxcb-cursor0 libxcb-icccm4 libxcb-keysyms1
+```
+
 ### Upgrade Python
 This is a reminder to upgrade python (>= 3.9) and pip (>= 21.0).
 > NOTE: You may notice different versions when using `python` and `python3` commands; use the one that has the latest version and use pip in that version of python. For example, if `python3` has the latest version of python on your computer, use pip as `python3 -m pip`. Make sure you use the right python command for all the steps detailed in this documentation.
@@ -67,6 +72,14 @@ If you just upgraded your Python version and used an older version in Lab2, then
   python -m pip install numpy pygame pyqt6 pyqtgraph pyyaml ipywidgets colorama
   ```
   > Replace `python` with `python3` if `python3` points to the latest version.
+3. Try 
+```python -m tkinter```
+to make sure that tkinter is set up correctly. If the Tkinter module isn't
+installed, run
+```pip install tk```
+and try the
+```python -m tkinter```
+again.
 
 ### Install Box2D package
 #### Installing from a pip wheel
