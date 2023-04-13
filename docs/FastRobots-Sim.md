@@ -44,7 +44,7 @@ and works without upgrading to a later Python version.
 
 WSL users may have to install some packages in the WSL terminal.
 ```
-sudo apt install libegl1 libxkbcommon-x11-0 libxcb-xinerama0 libxcb-cursor0 libxcb-icccm4 libxcb-keysyms1
+sudo apt install libgl1 libegl1 libxkbcommon-x11-0 libxcb-xinerama0 libxcb-cursor0 libxcb-icccm4 libxcb-keysyms1 libxcb-shape0
 ```
 
 ### Upgrade Python
