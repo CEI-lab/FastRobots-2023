@@ -24,6 +24,7 @@ Lecture slides will be uploaded on this page. Recorded lectures are available vi
 * [Lecture 18 - Sensor models](./FastRobots-18-SensorModel.pdf)
 * [Lecture 19 - Bayes Filter II](./FastRobots-19-Markov_BayesFilter2.pdf)
 * [Lecture 20 - Simulator](./FastRobots-20-Simulator.pdf)
+* [Lecture 21 - Particle Filters and intro to SLAM](FastRobots-21-SLAM.pdf)
 * 
 
 ' This code was uploaded at a random point during an interactive lecture, feel free to check it out, but use with caution!
