@@ -86,7 +86,7 @@ np.array(array)[np.newaxis].T
    1. Add the `async`  keyword to the function defintion `RealRobot.perform_observation_loop()`
    2. Add the `async`  keyword to the function defintion `BaseLocalization.get_observation_data()` [[Ref](https://github.com/CEI-lab/FastRobots-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L311)]
    3. Add the `await` keyword when calling the async coroutine `perform_observation_loop()` [[Ref](https://github.com/CEI-lab/FastRobots-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L312)]
-   4. In the code cell in the Jupyter notebook [lab12_real.ipynb](https://github.com/CEI-lab/FastRobots-lab11/blob/main/lab11_real.ipynb), append the `await` keyword to the line `loc.get_observation_data()`
+   4. In the code cell in the Jupyter notebook [lab11_real.ipynb](https://github.com/CEI-lab/FastRobots-lab11/blob/main/lab11_real.ipynb), append the `await` keyword to the line `loc.get_observation_data()`
 
    > NOTE: You could skip the above steps and instead directly call the asyncio sleep coroutine as `asyncio.run(asyncio.sleep(3))` inside the non-async function `RealRobot.perform_observation_loop()`, however, this *may not* be the right way to use asyncio coroutines and could pose issues.
 
