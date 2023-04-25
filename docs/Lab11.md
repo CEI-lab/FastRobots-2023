@@ -8,7 +8,7 @@
 In this lab you will perform localization with the Bayes filter on your actual robot. Note that we will only use the update step based on full 360 degree scans with the ToF sensor, because the motion of these particular robots is typically so noisy that it does not help us to do the prediction step. The point of the lab is to appreciate the difference between simulation and real-world systems. We will provide you with an optimized version of the localization code.
 
 ## Parts Required
-* 1 x Fully assembled [robot](https://www.amazon.com/gp/product/B07VBFQP44/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1), with [Artemis](https://www.sparkfun.com/products/15443), [TOF sensors](https://www.pololu.com/product/3415), and an [IMU](https://www.digikey.com/en/products/detail/pimoroni-ltd/PIM448/10246391).
+* 1 x Fully assembled [robot](https://force1rc.com/products/cyclone-remote-control-car-for-kids-adults), with [Artemis](https://www.sparkfun.com/products/15443), [TOF sensors](https://www.pololu.com/product/3415), and an [IMU](https://www.digikey.com/en/products/detail/pimoroni-ltd/PIM448/10246391).
 
 
 ## Prelab
@@ -37,20 +37,20 @@ You can use both your ToF sensors to collectively output sensor range readings a
 
 
 ## Setup the base code
-1. Copy *lab12_sim.ipynb* and *lab12_real.ipynb* from [here](https://github.com/CEI-lab/ECE4960-lab12) into the **notebooks** directory (inside the simulation base code directory).
-2. Copy *localization_extras.py* from [here](https://github.com/CEI-lab/ECE4960-lab12) into the **root** directory (inside the **ECE4960-sim-release** directory).
+1. Copy *lab11_sim.ipynb* and *lab11_real.ipynb* from [here](https://github.com/CEI-lab/FastRobots-lab11) into the **notebooks** directory (inside the simulation base code directory).
+2. Copy *localization_extras.py* from [here](https://github.com/CEI-lab/FastRobots-lab11) into the **root** directory (inside the **FastRobots-sim-release** directory).
 3. You will need to copy the necessary Bluetooth python modules (present inside directory **ble_python**) from your previous labs. Copy **ONLY** the files "*base_ble.py*", "*ble.py*", "*connection.yaml*" and "*cmd_types.py*" into the **notebooks** directory.
    > Do not copy the *utils.py* file.
 
 ### Files Provided:
 1. **localization_extras.py**: Provides a fully-functional Localization module that works on the virtual robot.
-2. **lab12_sim.ipynb**: A Jupyter notebook that demonstrates the Bayes filter implementation on the virtual robot.
-3. **lab12_real.ipynb**: A Jupyter notebook that provides you with a skeleton code to integrate the real robot with the localization code.
+2. **lab11_sim.ipynb**: A Jupyter notebook that demonstrates the Bayes filter implementation on the virtual robot.
+3. **lab11_real.ipynb**: A Jupyter notebook that provides you with a skeleton code to integrate the real robot with the localization code.
 
 ## Tasks
-1. Test Localization in Simulation: Run the notebook **lab12_sim.ipynb** and attach a single screenshot of the final plot (odom, ground truth and belief).
+1. Test Localization in Simulation: Run the notebook **lab11_sim.ipynb** and attach a single screenshot of the final plot (odom, ground truth and belief).
 2. Using a uniform prior on the pose, run (only) the update step using the sensor measurement data to localize your robot
-   1. Go through the notebook **lab12_real.ipynb** and implement the member function **perform_observation_loop** of class **RealRobot** (re-use code from previous labs to implement this).
+   1. Go through the notebook **lab11_real.ipynb** and implement the member function **perform_observation_loop** of class **RealRobot** (re-use code from previous labs to implement this).
    2. Place your robot in one of the four marked poses and run the update step of the Bayes filter once. 
       - How close is the localized pose w.r.t to the ground truth?
       - Visualize your results
@@ -84,9 +84,9 @@ np.array(array)[np.newaxis].T
 
 4. If you need to use an `await` inside `RealRobot.perform_observation_loop()` for some reason (for e.g. you are using BLE handlers to get the observation data from the real robot), you need to make changes to the localization functions which call this function. Here is a walkthrough of the function definitions that need to be modified:
    1. Add the `async`  keyword to the function defintion `RealRobot.perform_observation_loop()`
-   2. Add the `async`  keyword to the function defintion `BaseLocalization.get_observation_data()` [[Ref](https://github.com/CEI-lab/ECE4960-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L311)]
-   3. Add the `await` keyword when calling the async coroutine `perform_observation_loop()` [[Ref](https://github.com/CEI-lab/ECE4960-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L312)]
-   4. In the code cell in the Jupyter notebook [lab12_real.ipynb](https://github.com/CEI-lab/ECE4960-lab12/blob/main/lab12_real.ipynb), append the `await` keyword to the line `loc.get_observation_data()`
+   2. Add the `async`  keyword to the function defintion `BaseLocalization.get_observation_data()` [[Ref](https://github.com/CEI-lab/FastRobots-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L311)]
+   3. Add the `await` keyword when calling the async coroutine `perform_observation_loop()` [[Ref](https://github.com/CEI-lab/FastRobots-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L312)]
+   4. In the code cell in the Jupyter notebook [lab12_real.ipynb](https://github.com/CEI-lab/FastRobots-lab11/blob/main/lab11_real.ipynb), append the `await` keyword to the line `loc.get_observation_data()`
 
    > NOTE: You could skip the above steps and instead directly call the asyncio sleep coroutine as `asyncio.run(asyncio.sleep(3))` inside the non-async function `RealRobot.perform_observation_loop()`, however, this *may not* be the right way to use asyncio coroutines and could pose issues.
 
