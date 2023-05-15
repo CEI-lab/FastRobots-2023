@@ -35,5 +35,7 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 * [Grading and extension policies](./Grading.md)
 * [Health considerations](./Health.md)
 * [Ethical code of conduct](./CoC.md)
+* ECE Robotics Showcase, [Facebook](https://www.facebook.com/reel/768306938233613), [LinkedIn](
+https://www.linkedin.com/posts/cornell-engineering_roboticseducation-engineeringstudents-activity-7062877386136002561-IDx1?utm_source=share&utm_medium=member_desktop), [Instagram](https://www.instagram.com/p/CsJ6RvRgRm0/)
 
 **DISCLAIMER: This website uses cookies (Google Analytics) to track page views, outbound clicks and file downloads.**
