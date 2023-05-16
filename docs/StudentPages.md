@@ -28,7 +28,7 @@
 * [Kannan, Sarika](https://sarika2446.github.io/ece4160/)
 * [Kansara, Rishi](https://rkansara1.github.io/)
 * [Kwon, Jueun](https://jueunkwon.github.io/)
-* [Li, Max](http://www.maxdanli.com/Fast-Robots-Lab-Journal/)
+* [Li, Max](https://max-desparate-new-fast-robots-site.github.io)
 * [Li, Tiantian](https://tiantianll.github.io/fast-robots/)
 * [Li, Wenxin](https://leewx1020.github.io/)
 * [Lou, Allison](https://allisonlou.github.io/)
